@@ -646,4 +646,3 @@ Together, these elements provide a powerful and intuitive interface to analyze m
 
 ## Licence
 
-Voir le fichier [LICENSE](./LICENSE.md) du dépôt.
