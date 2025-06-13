@@ -1,9 +1,9 @@
-# [Titre] # MULTITHREADING VISUALISATION & SOLUTION  (ThreadVS)
+# MEDUSA PROJECT
 
 
 
 ## About
-[Titre du projet] aims to debug C++ multithreaded programs by visualizing threads executions. It provides a C++ Backend Recursive Dispatch Queue API accessible to the user. This API includes functionalities to log user code at different levels and generates a JSON file. This file is then used by a Python-based graphical user interface (GUI) to visualize the program’s execution.
+MEDUSA PROJECT aims to debug C++ multithreaded programs by visualizing threads executions. It provides a C++ Backend Recursive Dispatch Queue API accessible to the user. This API includes functionalities to log user code at different levels and generates a JSON file. This file is then used by a Python-based graphical user interface (GUI) to visualize the program’s execution.
 
 
 
@@ -35,7 +35,7 @@
 * Python 3.x
 
 ## Installing
-`git clone [a ajouter githhub lien]`    
+`git clone https://github.com/MITTALsag/MEDUSA.git`    
 
 
 ## Utilisation
