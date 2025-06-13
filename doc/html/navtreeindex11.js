@@ -1,14 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"structdetail_1_1output__adapter__protocol.html#ae2abfac28a47d21eb1ece0a2b7f06ff5":[2,0,1,122,5],
-"structdetail_1_1output__adapter__protocol.html#ae2abfac28a47d21eb1ece0a2b7f06ff5":[3,0,0,121,5],
-"structdetail_1_1output__adapter__protocol.html#afefb88bb4c134a02e136aaf69d0ecee9":[2,0,1,122,7],
-"structdetail_1_1output__adapter__protocol.html#afefb88bb4c134a02e136aaf69d0ecee9":[3,0,0,121,7],
-"structdetail_1_1position__t.html":[2,0,1,128],
-"structdetail_1_1position__t.html":[3,0,0,127],
-"structdetail_1_1position__t.html#a1299e15d15516235772d36e077ec9741":[2,0,1,128,0],
-"structdetail_1_1position__t.html#a1299e15d15516235772d36e077ec9741":[3,0,0,127,0],
-"structdetail_1_1position__t.html#a6548d584bd03d1d47bfcd7cf8b1fb0c6":[2,0,1,128,1],
 "structdetail_1_1position__t.html#a6548d584bd03d1d47bfcd7cf8b1fb0c6":[3,0,0,127,1],
 "structdetail_1_1position__t.html#a9ec1ac6600d1364f4d1c9f67de6a670b":[2,0,1,128,3],
 "structdetail_1_1position__t.html#a9ec1ac6600d1364f4d1c9f67de6a670b":[3,0,0,127,3],

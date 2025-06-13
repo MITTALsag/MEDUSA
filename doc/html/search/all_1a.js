@@ -22,8 +22,6 @@ var searchData=
   ['vector_2eh_19',['Vector.h',['../_vector_8h.html',1,'']]],
   ['vector_2einl_20',['Vector.inl',['../_vector_8inl.html',1,'']]],
   ['verifyextension_21',['VerifyExtension',['../namespace_lz_services.html#a0552f43768016cd85a1da32b5cf3fe37',1,'LzServices']]],
-  ['versions_22',['Gestion des versions',['../md__r_e_a_d_m_e.html#autotoc_md55',1,'']]],
-  ['verysimpletest_23',['VerySimpleTest',['../namespace_lz_async.html#a92b63f129ecfdd6acb818a9fb98ec5d4',1,'LzAsync']]],
-  ['visualisation_20solution_20threadvs_24',['[Titre] # MULTITHREADING VISUALISATION &amp; SOLUTION  (ThreadVS)',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['void_5ft_25',['void_t',['../namespacedetail.html#aa57deea1171ba56f5093e7d6acc154ee',1,'detail']]]
+  ['verysimpletest_22',['VerySimpleTest',['../namespace_lz_async.html#a92b63f129ecfdd6acb818a9fb98ec5d4',1,'LzAsync']]],
+  ['void_5ft_23',['void_t',['../namespacedetail.html#aa57deea1171ba56f5093e7d6acc154ee',1,'detail']]]
 ];

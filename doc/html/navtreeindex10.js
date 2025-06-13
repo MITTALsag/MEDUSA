@@ -1,14 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html":[2,0,1,31],
-"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html":[3,0,0,30],
-"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html#a581e9f301c4309a0b261bfe2d13f605c":[2,0,1,31,0],
-"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html#a581e9f301c4309a0b261bfe2d13f605c":[3,0,0,30,0],
-"structdetail_1_1has__to__json.html":[2,0,1,32],
-"structdetail_1_1has__to__json.html":[3,0,0,31],
-"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html":[2,0,1,33],
-"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html":[3,0,0,32],
-"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html#a883483f80299ff65db2469aa18b2cf78":[2,0,1,33,0],
 "structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html#a883483f80299ff65db2469aa18b2cf78":[3,0,0,32,0],
 "structdetail_1_1identity__tag.html":[2,0,1,34],
 "structdetail_1_1identity__tag.html":[3,0,0,33],
@@ -249,5 +240,14 @@ var NAVTREEINDEX10 =
 "structdetail_1_1output__adapter__protocol.html#a641001ae666e338cb9753901a8a3ef91":[2,0,1,122,3],
 "structdetail_1_1output__adapter__protocol.html#a641001ae666e338cb9753901a8a3ef91":[3,0,0,121,3],
 "structdetail_1_1output__adapter__protocol.html#abc3c05de1a9637889969f59da9ba0a03":[2,0,1,122,1],
-"structdetail_1_1output__adapter__protocol.html#abc3c05de1a9637889969f59da9ba0a03":[3,0,0,121,1]
+"structdetail_1_1output__adapter__protocol.html#abc3c05de1a9637889969f59da9ba0a03":[3,0,0,121,1],
+"structdetail_1_1output__adapter__protocol.html#ae2abfac28a47d21eb1ece0a2b7f06ff5":[2,0,1,122,5],
+"structdetail_1_1output__adapter__protocol.html#ae2abfac28a47d21eb1ece0a2b7f06ff5":[3,0,0,121,5],
+"structdetail_1_1output__adapter__protocol.html#afefb88bb4c134a02e136aaf69d0ecee9":[2,0,1,122,7],
+"structdetail_1_1output__adapter__protocol.html#afefb88bb4c134a02e136aaf69d0ecee9":[3,0,0,121,7],
+"structdetail_1_1position__t.html":[2,0,1,128],
+"structdetail_1_1position__t.html":[3,0,0,127],
+"structdetail_1_1position__t.html#a1299e15d15516235772d36e077ec9741":[2,0,1,128,0],
+"structdetail_1_1position__t.html#a1299e15d15516235772d36e077ec9741":[3,0,0,127,0],
+"structdetail_1_1position__t.html#a6548d584bd03d1d47bfcd7cf8b1fb0c6":[2,0,1,128,1]
 };

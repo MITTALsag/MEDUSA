@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "MEDUSA PROJECT", "index.html", [
-    [ "[Titre] # MULTITHREADING VISUALISATION & SOLUTION  (ThreadVS)", "md__r_e_a_d_m_e.html", [
+    [ "MEDUSA PROJECT", "md__r_e_a_d_m_e.html", [
       [ "About", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
       [ "Table of contents", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
       [ "Building", "md__r_e_a_d_m_e.html#autotoc_md4", [
@@ -58,18 +58,7 @@ var NAVTREE =
           [ "Bottom Area: Textual Trace", "md__r_e_a_d_m_e.html#autotoc_md45", null ]
         ] ]
       ] ],
-      [ "Exemple", "md__r_e_a_d_m_e.html#autotoc_md47", null ],
-      [ "Contribution", "md__r_e_a_d_m_e.html#autotoc_md48", null ],
-      [ "Build with", "md__r_e_a_d_m_e.html#autotoc_md49", [
-        [ "Langages & Frameworks", "md__r_e_a_d_m_e.html#autotoc_md50", null ],
-        [ "Outils", "md__r_e_a_d_m_e.html#autotoc_md51", [
-          [ "CI", "md__r_e_a_d_m_e.html#autotoc_md52", null ],
-          [ "Déploiement", "md__r_e_a_d_m_e.html#autotoc_md53", null ]
-        ] ]
-      ] ],
-      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md54", null ],
-      [ "Gestion des versions", "md__r_e_a_d_m_e.html#autotoc_md55", null ],
-      [ "Licence", "md__r_e_a_d_m_e.html#autotoc_md56", null ]
+      [ "Licence", "md__r_e_a_d_m_e.html#autotoc_md47", null ]
     ] ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -121,9 +110,9 @@ var NAVTREEINDEX =
 "classdetail_1_1parser.html#ae6dea6f2ecbd5ac3f2b66573f34fc063",
 "json_8hpp.html#a0d17bf1a54fc45a04ced6d3aa86a96e3",
 "json_8hpp.html#afe58497d56cda5e4cbf2d33be1bdd91e",
-"namespacedetail.html#a8c225a3450f5d8a42cded36558ce54bf",
-"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html",
-"structdetail_1_1output__adapter__protocol.html#ae2abfac28a47d21eb1ece0a2b7f06ff5"
+"namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a9d7183f16acce70658f686ae7f1a4d20",
+"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html#a883483f80299ff65db2469aa18b2cf78",
+"structdetail_1_1position__t.html#a6548d584bd03d1d47bfcd7cf8b1fb0c6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

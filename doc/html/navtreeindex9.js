@@ -1,14 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"namespacedetail.html#a8c225a3450f5d8a42cded36558ce54bf":[2,0,1,250],
-"namespacedetail.html#a8e7a4119c6c8e86cef8f1c904c8bf040":[2,0,1,302],
-"namespacedetail.html#a906affddceb2daa6a462c5c02ce53761":[2,0,1,238],
-"namespacedetail.html#a9151e99da8f015f0b1efb9f05e218ea0":[2,0,1,303],
-"namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632":[2,0,1,220],
-"namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a37a6259cc0c1dae299a7866489dff0bd":[2,0,1,220,0],
-"namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a5763da164f8659d94a56e29df64b4bcc":[2,0,1,220,5],
-"namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a84e2c64f38f78ba3ea5c905ab5a2da27":[2,0,1,220,4],
-"namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a94708897ec9db8647dfe695714c98e46":[2,0,1,220,9],
 "namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a9d7183f16acce70658f686ae7f1a4d20":[2,0,1,220,8],
 "namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632aa8cfde6331bd59eb2ac96f8911c4b666":[2,0,1,220,1],
 "namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632ab45cffe084dd3d20d928bee85e7b0f21":[2,0,1,220,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX9 =
 "structdetail_1_1has__key__compare.html":[2,0,1,29],
 "structdetail_1_1has__key__compare.html":[3,0,0,28],
 "structdetail_1_1has__non__default__from__json.html":[2,0,1,30],
-"structdetail_1_1has__non__default__from__json.html":[3,0,0,29]
+"structdetail_1_1has__non__default__from__json.html":[3,0,0,29],
+"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html":[2,0,1,31],
+"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html":[3,0,0,30],
+"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html#a581e9f301c4309a0b261bfe2d13f605c":[2,0,1,31,0],
+"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html#a581e9f301c4309a0b261bfe2d13f605c":[3,0,0,30,0],
+"structdetail_1_1has__to__json.html":[2,0,1,32],
+"structdetail_1_1has__to__json.html":[3,0,0,31],
+"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html":[2,0,1,33],
+"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html":[3,0,0,32],
+"structdetail_1_1has__to__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic__j28a68f7ad118503a2d1e9663db2d9323.html#a883483f80299ff65db2469aa18b2cf78":[2,0,1,33,0]
 };
