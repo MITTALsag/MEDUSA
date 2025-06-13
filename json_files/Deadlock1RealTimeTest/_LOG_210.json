@@ -8,7 +8,7 @@
     "threads": [
         {
             "nomT": "Thread_0",
-            "idT": "0x16d8bb000",
+            "idT": "0x16b6ff000",
             "jobs": [
                 {
                     "nomJ": "Job2_Deadlock",
@@ -38,7 +38,7 @@
         },
         {
             "nomT": "Thread_1",
-            "idT": "0x16d947000",
+            "idT": "0x16b78b000",
             "jobs": [
                 {
                     "nomJ": "Job1_Deadlock",
@@ -59,7 +59,7 @@
                 },
                 {
                     "NameM": "mutexB",
-                    "NEED": 102,
+                    "NEED": 105,
                     "HAVE": -1,
                     "FREE": -1
                 }
@@ -71,14 +71,14 @@
         "Time": 105,
         "Cycle": [
             {
-                "ThreadId": "0x16d8bb000",
+                "ThreadId": "0x16b6ff000",
                 "Need": "mutexA",
                 "Have": [
                     "mutexB"
                 ]
             },
             {
-                "ThreadId": "0x16d947000",
+                "ThreadId": "0x16b78b000",
                 "Need": "mutexB",
                 "Have": [
                     "mutexA"

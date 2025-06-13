@@ -1,5 +1,5 @@
 {
-    "final_time": 225,
+    "final_time": 221,
     "nb_threads": 3,
     "nb_jobs_OK": 5,
     "nb_jobs_KO": 2,
@@ -8,23 +8,14 @@
     "threads": [
         {
             "nomT": "Thread_0",
-            "idT": "0x16b70b000",
+            "idT": "0x16b6ff000",
             "jobs": [
                 {
                     "nomJ": "Dispatch 3",
                     "id": 2,
                     "id parent": 0,
                     "debut": 55,
-                    "fin": 106,
-                    "success": true,
-                    "error": ""
-                },
-                {
-                    "nomJ": "Dispatch 7",
-                    "id": 6,
-                    "id parent": 4,
-                    "debut": 166,
-                    "fin": 221,
+                    "fin": 110,
                     "success": true,
                     "error": ""
                 },
@@ -32,8 +23,8 @@
                     "nomJ": "Quitting",
                     "id": -1,
                     "id parent": -1,
-                    "debut": 222,
-                    "fin": 222,
+                    "debut": 218,
+                    "fin": 218,
                     "success": true,
                     "error": "Idle quitting"
                 }
@@ -43,7 +34,51 @@
         },
         {
             "nomT": "Thread_1",
-            "idT": "0x16b797000",
+            "idT": "0x16b78b000",
+            "jobs": [
+                {
+                    "nomJ": "Dispatch 4",
+                    "id": 3,
+                    "id parent": 0,
+                    "debut": 55,
+                    "fin": 83,
+                    "success": false,
+                    "error": "Very Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Dispatch 5",
+                    "id": 4,
+                    "id parent": 0,
+                    "debut": 83,
+                    "fin": 163,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dispatch 6",
+                    "id": 5,
+                    "id parent": 4,
+                    "debut": 163,
+                    "fin": 218,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 218,
+                    "fin": 218,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_2",
+            "idT": "0x16b817000",
             "jobs": [
                 {
                     "nomJ": "Dispatch 1",
@@ -55,64 +90,29 @@
                     "error": ""
                 },
                 {
-                    "nomJ": "Dispatch 4",
-                    "id": 3,
-                    "id parent": 0,
-                    "debut": 55,
-                    "fin": 86,
-                    "success": false,
-                    "error": "Very Simple Test: This is a test."
-                },
-                {
-                    "nomJ": "Dispatch 5",
-                    "id": 4,
-                    "id parent": 0,
-                    "debut": 86,
-                    "fin": 166,
-                    "success": true,
-                    "error": ""
-                },
-                {
-                    "nomJ": "Dispatch 6",
-                    "id": 5,
-                    "id parent": 4,
-                    "debut": 166,
-                    "fin": 221,
-                    "success": true,
-                    "error": ""
-                },
-                {
-                    "nomJ": "Quitting",
-                    "id": -1,
-                    "id parent": -1,
-                    "debut": 222,
-                    "fin": 222,
-                    "success": true,
-                    "error": "Idle quitting"
-                }
-            ],
-            "StateSwitch": [],
-            "Tags": []
-        },
-        {
-            "nomT": "Thread_2",
-            "idT": "0x16b823000",
-            "jobs": [
-                {
                     "nomJ": "Dispatch 2",
                     "id": 1,
                     "id parent": 0,
                     "debut": 55,
-                    "fin": 86,
+                    "fin": 83,
                     "success": false,
                     "error": "Very Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Dispatch 7",
+                    "id": 6,
+                    "id parent": 4,
+                    "debut": 163,
+                    "fin": 218,
+                    "success": true,
+                    "error": ""
                 },
                 {
                     "nomJ": "Quitting",
                     "id": -1,
                     "id parent": -1,
-                    "debut": 222,
-                    "fin": 222,
+                    "debut": 218,
+                    "fin": 218,
                     "success": true,
                     "error": "Idle quitting"
                 }

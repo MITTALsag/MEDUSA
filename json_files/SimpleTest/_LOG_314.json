@@ -1,9 +1,9 @@
 {
-    "final_time": 105,
+    "final_time": 314,
     "nb_threads": 3,
-    "nb_jobs_OK": 5,
-    "nb_jobs_KO": 4,
-    "nb_running_jobs": 3,
+    "nb_jobs_OK": 10,
+    "nb_jobs_KO": 9,
+    "nb_running_jobs": 1,
     "nb_quitting": 0,
     "threads": [
         {
@@ -42,6 +42,24 @@
                     "id": 11,
                     "id parent": -1,
                     "debut": 105,
+                    "fin": 208,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 7",
+                    "id": 14,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 308,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 9",
+                    "id": 19,
+                    "id parent": -1,
+                    "debut": 309,
                     "fin": -1,
                     "success": -1,
                     "error": -1
@@ -77,9 +95,54 @@
                     "id": 10,
                     "id parent": -1,
                     "debut": 105,
-                    "fin": -1,
-                    "success": -1,
-                    "error": -1
+                    "fin": 208,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job OK 6",
+                    "id": 12,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 208,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 6",
+                    "id": 13,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 208,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 8",
+                    "id": 16,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 208,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 8",
+                    "id": 17,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 209,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 9",
+                    "id": 18,
+                    "id parent": -1,
+                    "debut": 209,
+                    "fin": 314,
+                    "success": true,
+                    "error": ""
                 }
             ],
             "StateSwitch": [],
@@ -130,9 +193,18 @@
                     "id": 7,
                     "id parent": -1,
                     "debut": 103,
-                    "fin": -1,
-                    "success": -1,
-                    "error": -1
+                    "fin": 208,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job KO 7",
+                    "id": 15,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 313,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
                 }
             ],
             "StateSwitch": [],

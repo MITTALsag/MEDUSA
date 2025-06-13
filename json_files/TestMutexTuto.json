@@ -1,5 +1,5 @@
 {
-    "final_time": 146,
+    "final_time": 150,
     "nb_threads": 6,
     "nb_jobs_OK": 6,
     "nb_jobs_KO": 0,
@@ -8,7 +8,7 @@
     "threads": [
         {
             "nomT": "Thread_0",
-            "idT": "0x16d743000",
+            "idT": "0x16b6ff000",
             "jobs": [
                 {
                     "nomJ": "Job with Mutex 1",
@@ -23,8 +23,8 @@
                     "nomJ": "Quitting",
                     "id": -1,
                     "id parent": -1,
-                    "debut": 145,
-                    "fin": 145,
+                    "debut": 150,
+                    "fin": 150,
                     "success": true,
                     "error": "Idle quitting"
                 }
@@ -41,11 +41,11 @@
         },
         {
             "nomT": "Thread_1",
-            "idT": "0x16d7cf000",
+            "idT": "0x16b78b000",
             "jobs": [
                 {
-                    "nomJ": "Job with Mutex 6",
-                    "id": 5,
+                    "nomJ": "Job with Mutex 2",
+                    "id": 1,
                     "id parent": -1,
                     "debut": 0,
                     "fin": 50,
@@ -56,8 +56,8 @@
                     "nomJ": "Quitting",
                     "id": -1,
                     "id parent": -1,
-                    "debut": 145,
-                    "fin": 145,
+                    "debut": 150,
+                    "fin": 150,
                     "success": true,
                     "error": "Idle quitting"
                 }
@@ -74,7 +74,40 @@
         },
         {
             "nomT": "Thread_2",
-            "idT": "0x16d85b000",
+            "idT": "0x16b817000",
+            "jobs": [
+                {
+                    "nomJ": "Job with Mutex 4",
+                    "id": 3,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 124,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 149,
+                    "fin": 149,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutex",
+                    "NEED": 0,
+                    "HAVE": 99,
+                    "FREE": 124
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_3",
+            "idT": "0x16b8a3000",
             "jobs": [
                 {
                     "nomJ": "Job with Mutex 3",
@@ -89,8 +122,8 @@
                     "nomJ": "Quitting",
                     "id": -1,
                     "id parent": -1,
-                    "debut": 145,
-                    "fin": 145,
+                    "debut": 150,
+                    "fin": 150,
                     "success": true,
                     "error": "Idle quitting"
                 }
@@ -106,48 +139,15 @@
             "Tags": []
         },
         {
-            "nomT": "Thread_3",
-            "idT": "0x16d8e7000",
-            "jobs": [
-                {
-                    "nomJ": "Job with Mutex 4",
-                    "id": 3,
-                    "id parent": -1,
-                    "debut": 0,
-                    "fin": 121,
-                    "success": true,
-                    "error": ""
-                },
-                {
-                    "nomJ": "Quitting",
-                    "id": -1,
-                    "id parent": -1,
-                    "debut": 145,
-                    "fin": 145,
-                    "success": true,
-                    "error": "Idle quitting"
-                }
-            ],
-            "StateSwitch": [
-                {
-                    "NameM": "mutex",
-                    "NEED": 0,
-                    "HAVE": 96,
-                    "FREE": 121
-                }
-            ],
-            "Tags": []
-        },
-        {
             "nomT": "Thread_4",
-            "idT": "0x16d973000",
+            "idT": "0x16b92f000",
             "jobs": [
                 {
                     "nomJ": "Job with Mutex 5",
                     "id": 4,
                     "id parent": -1,
                     "debut": 0,
-                    "fin": 144,
+                    "fin": 99,
                     "success": true,
                     "error": ""
                 },
@@ -155,41 +155,8 @@
                     "nomJ": "Quitting",
                     "id": -1,
                     "id parent": -1,
-                    "debut": 145,
-                    "fin": 145,
-                    "success": true,
-                    "error": "Idle quitting"
-                }
-            ],
-            "StateSwitch": [
-                {
-                    "NameM": "mutex",
-                    "NEED": 0,
-                    "HAVE": 121,
-                    "FREE": 144
-                }
-            ],
-            "Tags": []
-        },
-        {
-            "nomT": "Thread_5",
-            "idT": "0x16d9ff000",
-            "jobs": [
-                {
-                    "nomJ": "Job with Mutex 2",
-                    "id": 1,
-                    "id parent": -1,
-                    "debut": 0,
-                    "fin": 96,
-                    "success": true,
-                    "error": ""
-                },
-                {
-                    "nomJ": "Quitting",
-                    "id": -1,
-                    "id parent": -1,
-                    "debut": 145,
-                    "fin": 145,
+                    "debut": 150,
+                    "fin": 150,
                     "success": true,
                     "error": "Idle quitting"
                 }
@@ -199,7 +166,40 @@
                     "NameM": "mutex",
                     "NEED": 0,
                     "HAVE": 75,
-                    "FREE": 96
+                    "FREE": 99
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_5",
+            "idT": "0x16b9bb000",
+            "jobs": [
+                {
+                    "nomJ": "Job with Mutex 6",
+                    "id": 5,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 149,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 149,
+                    "fin": 149,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutex",
+                    "NEED": 0,
+                    "HAVE": 124,
+                    "FREE": 149
                 }
             ],
             "Tags": []

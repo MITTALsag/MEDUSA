@@ -1,9 +1,9 @@
 {
-    "final_time": 105,
+    "final_time": 208,
     "nb_threads": 3,
-    "nb_jobs_OK": 5,
+    "nb_jobs_OK": 7,
     "nb_jobs_KO": 4,
-    "nb_running_jobs": 3,
+    "nb_running_jobs": 2,
     "nb_quitting": 0,
     "threads": [
         {
@@ -77,9 +77,18 @@
                     "id": 10,
                     "id parent": -1,
                     "debut": 105,
-                    "fin": -1,
-                    "success": -1,
-                    "error": -1
+                    "fin": 208,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job OK 6",
+                    "id": 12,
+                    "id parent": -1,
+                    "debut": 208,
+                    "fin": 208,
+                    "success": true,
+                    "error": ""
                 }
             ],
             "StateSwitch": [],

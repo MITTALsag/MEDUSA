@@ -1,10 +1,6 @@
 #include "DispatchQ_UnitTest.h"
 #include "DispatchQ_UnitTestData.h"
 #include "DispatchQ.h"
-// Unit test recursive DQ + Meshing
-#include <LzTriModel/Mesh.h>
-#include <LzTriModel/OutlinerTools_Meshing.h>
-//
 
 #include <chrono>
 #include <mutex>
@@ -367,7 +363,7 @@ void TestRecursiveDQ__Counter()
 
 #ifdef TEST_ASYNC_DQ_RECURSION
 
-        spTestAsyncDQ->startProfiling("./json_files/TestRecursiveDQCounter2", LzAsync::LogsMod::END);
+        spTestAsyncDQ->startProfiling("./json_files/TestRecursiveDQCounter2", LzAsync::LogsMod::REALTIME);
         // Count ints
         spTestAsyncDQ->dispatch( [&]{ RecursiveCount( lInts, lSum ); }, "RecursiveCount : with size = "+std::to_string(lInts->size()) );
 
@@ -404,46 +400,6 @@ void TestRecursiveDQ__Counter()
             LzLogM("", "Summation is correct.")
     }
 }
-
-
-
-//================================================================================
-using LzGeom::Point3D;
-using LzTriModel::Mesh;
-
-//================================================================================
-void TestRecursiveDQ__Meshing( const vector<std::array<double, 3>> & pXYZs )
-{
-    // Build list of Point3D from vector
-    List<Point3D> lOutline;
-    for( size_t p=0 ; p<pXYZs.size() ; p++ )
-        lOutline.AddTail( { pXYZs[p][0], pXYZs[p][1], pXYZs[p][2] } );
-
-    // Log
-    LzLogTimeN("", "DispatchQ -- Unit Test -- Meshing outline= "<<lOutline.Count()<<" points")
-
-    // Meshing options
-    LzTriModel::OutlinerTools::MeshOutlineOptions lOptions;
-    lOptions.mEarlyStopEvaluation = true;
-    lOptions.mEarlyStopMinDist = 0.5; // Good compromise : quality vs speed... still a magic number.... use outline properties to adjust value ???
-
-    // Cap this outline
-    Mesh lCutMesh;
-    LzTriModel::OutlinerTools::MeshOutline( lCutMesh, lOutline, {0, 1, 0}, lOptions );
-
-    // // Save
-    lCutMesh.Save( LzServices::StartUpPath("./obj_files/") + "/__DEBUG__MeshOutline__output.obj");
-}
-
-//================================================================================
-void TestRecursiveDQ__Meshing__5() { TestRecursiveDQ__Meshing( sOutline__5 ); }
-void TestRecursiveDQ__Meshing__267() { TestRecursiveDQ__Meshing( sOutline__267 ); }
-void TestRecursiveDQ__Meshing__793() { TestRecursiveDQ__Meshing( sOutline__793 ); }
-void TestRecursiveDQ__Meshing__2409() { TestRecursiveDQ__Meshing( sOutline__2409 ); }
-void TestRecursiveDQ__Meshing__Circle_152() { TestRecursiveDQ__Meshing( sOutline__152__circle ); }
-void TestRecursiveDQ__Meshing__Circle_501() { TestRecursiveDQ__Meshing( sOutline__501__circle ); }
-
-
 
 //=================================================================================
 void TestDeadlock1WithDispatchQ() 
