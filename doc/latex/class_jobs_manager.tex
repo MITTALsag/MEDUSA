@@ -1,0 +1,65 @@
+\doxysection{Jobs\+Manager Class Reference}
+\hypertarget{class_jobs_manager}{}\label{class_jobs_manager}\index{JobsManager@{JobsManager}}
+
+
+Job execution recorder.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Thread.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_jobs_manager_aa9f0e978f1db6830585415b65469be58}{Add\+Log}} (const \mbox{\hyperlink{class_jobs}{Jobs}} \&p\+Jobs)
+\begin{DoxyCompactList}\small\item\em Adds a job record to the tracking system. \end{DoxyCompactList}\item 
+const vector$<$ \mbox{\hyperlink{class_jobs}{Jobs}} $>$ \& \mbox{\hyperlink{class_jobs_manager_a11dda92298aef7274dd9c4b9774d51d8}{Get\+Jobs}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves all tracked job records. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Job execution recorder. 
+
+Maintains chronological record of job executions with timing and status information for performance analysis. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jobs_manager_aa9f0e978f1db6830585415b65469be58}\index{JobsManager@{JobsManager}!AddLog@{AddLog}}
+\index{AddLog@{AddLog}!JobsManager@{JobsManager}}
+\doxysubsubsection{\texorpdfstring{AddLog()}{AddLog()}}
+{\footnotesize\ttfamily \label{class_jobs_manager_aa9f0e978f1db6830585415b65469be58} 
+void Jobs\+Manager\+::\+Add\+Log (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jobs}{Jobs}} \&}]{p\+Jobs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a job record to the tracking system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Jobs} & The job object containing execution details to be recorded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The job is appended to the internal collection and persists until cleared 
+\end{DoxyNote}
+\Hypertarget{class_jobs_manager_a11dda92298aef7274dd9c4b9774d51d8}\index{JobsManager@{JobsManager}!GetJobs@{GetJobs}}
+\index{GetJobs@{GetJobs}!JobsManager@{JobsManager}}
+\doxysubsubsection{\texorpdfstring{GetJobs()}{GetJobs()}}
+{\footnotesize\ttfamily \label{class_jobs_manager_a11dda92298aef7274dd9c4b9774d51d8} 
+const vector$<$ \mbox{\hyperlink{class_jobs}{Jobs}} $>$ \& Jobs\+Manager\+::\+Get\+Jobs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all tracked job records. 
+
+\begin{DoxyReturn}{Returns}
+const reference to the vector containing all job entries 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+The returned reference becomes invalid if the manager is modified 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Lz\+Async/\+Data\+Thread/\mbox{\hyperlink{_data_thread_8h}{Data\+Thread.\+h}}\end{DoxyCompactItemize}

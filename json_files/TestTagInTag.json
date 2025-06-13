@@ -1,0 +1,48 @@
+{
+    "final_time": 314,
+    "nb_threads": 1,
+    "nb_jobs_OK": 1,
+    "nb_jobs_KO": 0,
+    "nb_running_jobs": 0,
+    "nb_quitting": 1,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16b88b000",
+            "jobs": [
+                {
+                    "nomJ": "Job with Tag",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 311,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 311,
+                    "fin": 311,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": [
+                {
+                    "NameT": "First tag",
+                    "START": 0,
+                    "STOP": 311
+                },
+                {
+                    "NameT": "Second tag",
+                    "START": 105,
+                    "STOP": 210
+                }
+            ]
+        }
+    ],
+    "DeadLock": null
+}

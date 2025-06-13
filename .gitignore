@@ -1,0 +1,4 @@
+**/*.o
+LzAsync/DispatchQ_Test
+GUI/pyqt6_venv
+GUI/__pycache__

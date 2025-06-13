@@ -1,0 +1,89 @@
+{
+    "final_time": 415,
+    "nb_threads": 2,
+    "nb_jobs_OK": 2,
+    "nb_jobs_KO": 0,
+    "nb_running_jobs": 0,
+    "nb_quitting": 2,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16be53000",
+            "jobs": [
+                {
+                    "nomJ": "Job with Mutex 1",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 205,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 415,
+                    "fin": 415,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": 205
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 103,
+                    "HAVE": 103,
+                    "FREE": 205
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_1",
+            "idT": "0x16bedf000",
+            "jobs": [
+                {
+                    "nomJ": "Job with Mutex 2",
+                    "id": 1,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 415,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 415,
+                    "fin": 415,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 205,
+                    "FREE": 415
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 310,
+                    "HAVE": 310,
+                    "FREE": 415
+                }
+            ],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

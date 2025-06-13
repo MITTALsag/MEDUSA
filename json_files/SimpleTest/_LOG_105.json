@@ -1,0 +1,143 @@
+{
+    "final_time": 105,
+    "nb_threads": 3,
+    "nb_jobs_OK": 5,
+    "nb_jobs_KO": 4,
+    "nb_running_jobs": 3,
+    "nb_quitting": 0,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16f143000",
+            "jobs": [
+                {
+                    "nomJ": "Job OK 0",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 0,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 1",
+                    "id": 3,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 105,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 4",
+                    "id": 8,
+                    "id parent": -1,
+                    "debut": 105,
+                    "fin": 105,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 4",
+                    "id": 9,
+                    "id parent": -1,
+                    "debut": 105,
+                    "fin": 105,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 5",
+                    "id": 10,
+                    "id parent": -1,
+                    "debut": 105,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_1",
+            "idT": "0x16f1cf000",
+            "jobs": [
+                {
+                    "nomJ": "Job OK 1",
+                    "id": 2,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 101,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 3",
+                    "id": 7,
+                    "id parent": -1,
+                    "debut": 101,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_2",
+            "idT": "0x16f25b000",
+            "jobs": [
+                {
+                    "nomJ": "Job KO 0",
+                    "id": 1,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 0,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 2",
+                    "id": 4,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 0,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 2",
+                    "id": 5,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 0,
+                    "success": false,
+                    "error": "Simple Test: This is a test."
+                },
+                {
+                    "nomJ": "Job OK 3",
+                    "id": 6,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 105,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job KO 5",
+                    "id": 11,
+                    "id parent": -1,
+                    "debut": 105,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

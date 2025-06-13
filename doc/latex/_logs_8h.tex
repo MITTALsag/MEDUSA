@@ -1,0 +1,27 @@
+\doxysection{Lz\+Async/\+Logs/\+Logs.h File Reference}
+\hypertarget{_logs_8h}{}\label{_logs_8h}\index{LzAsync/Logs/Logs.h@{LzAsync/Logs/Logs.h}}
+
+
+Class for unify all logs in one structure.  
+
+
+{\ttfamily \#include "{}../\+Jobs/\+Jobs.\+h"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_logs}{Logs}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_logs}{Logs} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{_logs_8h_a77de5febedeed86f26d80050c042cc4b}\label{_logs_8h_a77de5febedeed86f26d80050c042cc4b} 
+using {\bfseries time\+\_\+point} = std\+::chrono\+::time\+\_\+point$<$std\+::chrono\+::steady\+\_\+clock$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for unify all logs in one structure. 
+
+This class is used in DispatchQ class (threw \doxylink{class_data_thread}{Data\+Thread} class) to be the logs of DispatchQ class. 

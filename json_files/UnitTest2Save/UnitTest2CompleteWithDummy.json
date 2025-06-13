@@ -1,0 +1,719 @@
+{
+    "final_time": 633,
+    "nb_threads": 3,
+    "nb_jobs_OK": 69,
+    "nb_jobs_KO": 1,
+    "nb_running_jobs": 0,
+    "nb_quitting": 6,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16ba6b000",
+            "jobs": [
+                {
+                    "nomJ": "Job 2 in test0",
+                    "id": 2,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 49,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 6 in test0",
+                    "id": 6,
+                    "id parent": -1,
+                    "debut": 49,
+                    "fin": 85,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 8 in test0",
+                    "id": 8,
+                    "id parent": -1,
+                    "debut": 85,
+                    "fin": 121,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 11 in test0",
+                    "id": 11,
+                    "id parent": -1,
+                    "debut": 121,
+                    "fin": 140,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 13 in test0",
+                    "id": 13,
+                    "id parent": -1,
+                    "debut": 140,
+                    "fin": 176,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 18 in test0",
+                    "id": 18,
+                    "id parent": -1,
+                    "debut": 176,
+                    "fin": 210,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 210,
+                    "fin": 210,
+                    "success": true,
+                    "error": "Empty quitting"
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 20,
+                    "id parent": -1,
+                    "debut": 223,
+                    "fin": 246,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 25,
+                    "id parent": -1,
+                    "debut": 246,
+                    "fin": 271,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 28,
+                    "id parent": -1,
+                    "debut": 271,
+                    "fin": 296,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 31,
+                    "id parent": -1,
+                    "debut": 296,
+                    "fin": 318,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 34,
+                    "id parent": -1,
+                    "debut": 318,
+                    "fin": 341,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 36,
+                    "id parent": -1,
+                    "debut": 341,
+                    "fin": 366,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 39,
+                    "id parent": -1,
+                    "debut": 366,
+                    "fin": 391,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 43,
+                    "id parent": -1,
+                    "debut": 391,
+                    "fin": 412,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 46,
+                    "id parent": -1,
+                    "debut": 412,
+                    "fin": 435,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 49,
+                    "id parent": -1,
+                    "debut": 435,
+                    "fin": 460,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 52,
+                    "id parent": -1,
+                    "debut": 460,
+                    "fin": 485,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 55,
+                    "id parent": -1,
+                    "debut": 485,
+                    "fin": 510,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 58,
+                    "id parent": -1,
+                    "debut": 510,
+                    "fin": 534,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 60,
+                    "id parent": -1,
+                    "debut": 535,
+                    "fin": 558,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 62,
+                    "id parent": -1,
+                    "debut": 558,
+                    "fin": 582,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 66,
+                    "id parent": -1,
+                    "debut": 582,
+                    "fin": 607,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 69,
+                    "id parent": -1,
+                    "debut": 607,
+                    "fin": 629,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 629,
+                    "fin": 629,
+                    "success": true,
+                    "error": "Empty quitting"
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_1",
+            "idT": "0x16baf7000",
+            "jobs": [
+                {
+                    "nomJ": "Job 1 in test0",
+                    "id": 1,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 37,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 3 in test0",
+                    "id": 3,
+                    "id parent": -1,
+                    "debut": 37,
+                    "fin": 46,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 5 in test0",
+                    "id": 5,
+                    "id parent": -1,
+                    "debut": 46,
+                    "fin": 96,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 10 in test0",
+                    "id": 10,
+                    "id parent": -1,
+                    "debut": 96,
+                    "fin": 141,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 14 in test0",
+                    "id": 14,
+                    "id parent": -1,
+                    "debut": 141,
+                    "fin": 160,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 16 in test0",
+                    "id": 16,
+                    "id parent": -1,
+                    "debut": 160,
+                    "fin": 162,
+                    "success": false,
+                    "error": "*** Fatal error ***"
+                },
+                {
+                    "nomJ": "Job 17 in test0",
+                    "id": 17,
+                    "id parent": -1,
+                    "debut": 162,
+                    "fin": 210,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 210,
+                    "fin": 210,
+                    "success": true,
+                    "error": "Empty quitting"
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 21,
+                    "id parent": -1,
+                    "debut": 223,
+                    "fin": 246,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 23,
+                    "id parent": -1,
+                    "debut": 246,
+                    "fin": 271,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 26,
+                    "id parent": -1,
+                    "debut": 271,
+                    "fin": 296,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 30,
+                    "id parent": -1,
+                    "debut": 296,
+                    "fin": 317,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 33,
+                    "id parent": -1,
+                    "debut": 318,
+                    "fin": 341,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 37,
+                    "id parent": -1,
+                    "debut": 341,
+                    "fin": 366,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 40,
+                    "id parent": -1,
+                    "debut": 366,
+                    "fin": 387,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 41,
+                    "id parent": -1,
+                    "debut": 387,
+                    "fin": 412,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 44,
+                    "id parent": -1,
+                    "debut": 412,
+                    "fin": 434,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 47,
+                    "id parent": -1,
+                    "debut": 434,
+                    "fin": 459,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 50,
+                    "id parent": -1,
+                    "debut": 459,
+                    "fin": 484,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 53,
+                    "id parent": -1,
+                    "debut": 484,
+                    "fin": 509,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 56,
+                    "id parent": -1,
+                    "debut": 509,
+                    "fin": 533,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 59,
+                    "id parent": -1,
+                    "debut": 533,
+                    "fin": 558,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 63,
+                    "id parent": -1,
+                    "debut": 558,
+                    "fin": 583,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 67,
+                    "id parent": -1,
+                    "debut": 583,
+                    "fin": 607,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 607,
+                    "fin": 607,
+                    "success": true,
+                    "error": "Empty quitting"
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_2",
+            "idT": "0x16bb83000",
+            "jobs": [
+                {
+                    "nomJ": "Job 0 in test0",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 42,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 4 in test0",
+                    "id": 4,
+                    "id parent": -1,
+                    "debut": 42,
+                    "fin": 80,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 7 in test0",
+                    "id": 7,
+                    "id parent": -1,
+                    "debut": 80,
+                    "fin": 91,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 9 in test0",
+                    "id": 9,
+                    "id parent": -1,
+                    "debut": 91,
+                    "fin": 134,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 12 in test0",
+                    "id": 12,
+                    "id parent": -1,
+                    "debut": 134,
+                    "fin": 145,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 15 in test0",
+                    "id": 15,
+                    "id parent": -1,
+                    "debut": 145,
+                    "fin": 181,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Job 19 in test0",
+                    "id": 19,
+                    "id parent": -1,
+                    "debut": 181,
+                    "fin": 222,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 222,
+                    "fin": 222,
+                    "success": true,
+                    "error": "Empty quitting"
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 22,
+                    "id parent": -1,
+                    "debut": 223,
+                    "fin": 246,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 24,
+                    "id parent": -1,
+                    "debut": 246,
+                    "fin": 271,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 27,
+                    "id parent": -1,
+                    "debut": 271,
+                    "fin": 296,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 29,
+                    "id parent": -1,
+                    "debut": 296,
+                    "fin": 317,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 32,
+                    "id parent": -1,
+                    "debut": 317,
+                    "fin": 341,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 35,
+                    "id parent": -1,
+                    "debut": 341,
+                    "fin": 366,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 38,
+                    "id parent": -1,
+                    "debut": 366,
+                    "fin": 388,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 42,
+                    "id parent": -1,
+                    "debut": 388,
+                    "fin": 412,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 45,
+                    "id parent": -1,
+                    "debut": 412,
+                    "fin": 434,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 48,
+                    "id parent": -1,
+                    "debut": 434,
+                    "fin": 459,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 51,
+                    "id parent": -1,
+                    "debut": 459,
+                    "fin": 484,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 54,
+                    "id parent": -1,
+                    "debut": 484,
+                    "fin": 509,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 57,
+                    "id parent": -1,
+                    "debut": 509,
+                    "fin": 534,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 61,
+                    "id parent": -1,
+                    "debut": 535,
+                    "fin": 558,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 64,
+                    "id parent": -1,
+                    "debut": 558,
+                    "fin": 580,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 65,
+                    "id parent": -1,
+                    "debut": 581,
+                    "fin": 606,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Dummy job after resize",
+                    "id": 68,
+                    "id parent": -1,
+                    "debut": 606,
+                    "fin": 629,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 629,
+                    "fin": 629,
+                    "success": true,
+                    "error": "Empty quitting"
+                }
+            ],
+            "StateSwitch": [],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

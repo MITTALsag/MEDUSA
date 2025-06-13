@@ -1,0 +1,137 @@
+{
+    "final_time": 160,
+    "nb_threads": 4,
+    "nb_jobs_OK": 0,
+    "nb_jobs_KO": 0,
+    "nb_running_jobs": 4,
+    "nb_quitting": 0,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16d2ff000",
+            "jobs": [
+                {
+                    "nomJ": "Job4_Deadlock",
+                    "id": 3,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexE",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexA",
+                    "NEED": 105,
+                    "HAVE": -1,
+                    "FREE": -1
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_1",
+            "idT": "0x16d38b000",
+            "jobs": [
+                {
+                    "nomJ": "Job1_Deadlock",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 105,
+                    "HAVE": -1,
+                    "FREE": -1
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_2",
+            "idT": "0x16d417000",
+            "jobs": [
+                {
+                    "nomJ": "Job3_Deadlock",
+                    "id": 2,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexC",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexD",
+                    "NEED": 55,
+                    "HAVE": 55,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexE",
+                    "NEED": 160,
+                    "HAVE": -1,
+                    "FREE": -1
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_3",
+            "idT": "0x16d4a3000",
+            "jobs": [
+                {
+                    "nomJ": "Job2_Deadlock",
+                    "id": 1,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexB",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexC",
+                    "NEED": 105,
+                    "HAVE": -1,
+                    "FREE": -1
+                }
+            ],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

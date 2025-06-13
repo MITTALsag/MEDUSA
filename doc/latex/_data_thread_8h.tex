@@ -1,0 +1,83 @@
+\doxysection{Lz\+Async/\+Data\+Thread/\+Data\+Thread.h File Reference}
+\hypertarget{_data_thread_8h}{}\label{_data_thread_8h}\index{LzAsync/DataThread/DataThread.h@{LzAsync/DataThread/DataThread.h}}
+
+
+Management system for thread-\/related data operations.  
+
+
+{\ttfamily \#include "{}../\+Jobs/\+Jobs.\+h"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$Lz\+Services/\+Lz\+Log.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_jobs_manager}{Jobs\+Manager}}
+\begin{DoxyCompactList}\small\item\em Job execution recorder. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mutex_container}{Mutex\+Container}}
+\begin{DoxyCompactList}\small\item\em Mutex operation tracker. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_tag_container}{Tag\+Container}}
+\begin{DoxyCompactList}\small\item\em Tagged section monitor. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_data_thread}{Data\+Thread}}
+\begin{DoxyCompactList}\small\item\em Thread instrumentation facade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{Thread\+Mutex\+State}} \{ {\bfseries NEED}
+, {\bfseries HAVE}
+, {\bfseries FREE}
+ \}
+\begin{DoxyCompactList}\small\item\em Mutex operation states. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{Tag\+State}} \{ {\bfseries START}
+, {\bfseries STOP}
+ \}
+\begin{DoxyCompactList}\small\item\em Tag operation markers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Management system for thread-\/related data operations. 
+
+Provides comprehensive tracking of thread activities including\+:
+\begin{DoxyItemize}
+\item Job execution logs
+\item Mutex state transitions
+\item Tag lifecycle events
+\end{DoxyItemize}
+
+The system is designed for performance analysis and debugging of threaded applications. 
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}\index{DataThread.h@{DataThread.h}!TagState@{TagState}}
+\index{TagState@{TagState}!DataThread.h@{DataThread.h}}
+\doxysubsubsection{\texorpdfstring{TagState}{TagState}}
+{\footnotesize\ttfamily \label{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e} 
+enum class \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{Tag\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Tag operation markers. 
+
+Indicates tag boundary events\+:
+\begin{DoxyItemize}
+\item START\+: Beginning of tagged section
+\item STOP\+: End of tagged section 
+\end{DoxyItemize}\Hypertarget{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}\index{DataThread.h@{DataThread.h}!ThreadMutexState@{ThreadMutexState}}
+\index{ThreadMutexState@{ThreadMutexState}!DataThread.h@{DataThread.h}}
+\doxysubsubsection{\texorpdfstring{ThreadMutexState}{ThreadMutexState}}
+{\footnotesize\ttfamily \label{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3} 
+enum class \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{Thread\+Mutex\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Mutex operation states. 
+
+Tracks the lifecycle of mutex operations\+:
+\begin{DoxyItemize}
+\item NEED\+: Thread requests mutex access
+\item HAVE\+: Thread successfully acquires mutex
+\item FREE\+: Thread releases mutex 
+\end{DoxyItemize}

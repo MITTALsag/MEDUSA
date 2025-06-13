@@ -1,0 +1,50 @@
+{
+    "final_time": 210,
+    "nb_threads": 1,
+    "nb_jobs_OK": 1,
+    "nb_jobs_KO": 0,
+    "nb_running_jobs": 0,
+    "nb_quitting": 1,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16be53000",
+            "jobs": [
+                {
+                    "nomJ": "Job with Mutex",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 210,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 210,
+                    "fin": 210,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": 210
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 105,
+                    "HAVE": 105,
+                    "FREE": 210
+                }
+            ],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

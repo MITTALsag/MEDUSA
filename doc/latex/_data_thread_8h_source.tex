@@ -1,0 +1,120 @@
+\doxysection{Data\+Thread.\+h}
+\hypertarget{_data_thread_8h_source}{}\label{_data_thread_8h_source}\index{LzAsync/DataThread/DataThread.h@{LzAsync/DataThread/DataThread.h}}
+\mbox{\hyperlink{_data_thread_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_mDataTHREAD\_H\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_mDataTHREAD\_H\_\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_jobs_8h}{../Jobs/Jobs.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <array>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <LzServices/LzLog.h>}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00038\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{ThreadMutexState}}\ \{\ NEED,\ HAVE,\ FREE\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{TagState}}\ \{\ START,\ STOP\ \};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00050\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00051\ \textcolor{keyword}{using\ }std::array;}
+\DoxyCodeLine{00052\ \textcolor{keyword}{using\ }std::map;}
+\DoxyCodeLine{00053\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00054\ \textcolor{keyword}{using\ }std::tuple;}
+\DoxyCodeLine{00055\ \textcolor{keyword}{using\ }std::get;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_jobs_manager}{JobsManager}}\ }
+\DoxyCodeLine{00066\ \{}
+\DoxyCodeLine{00067\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_jobs_manager_aa9f0e978f1db6830585415b65469be58}{AddLog}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_jobs}{Jobs}}\&\ pJobs)\ \{\ mJobs.push\_back(pJobs);\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{const}\ vector<Jobs>\&\ \mbox{\hyperlink{class_jobs_manager_a11dda92298aef7274dd9c4b9774d51d8}{GetJobs}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mJobs;\ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00084\ \ \ \ \ vector<Jobs>\ mJobs;\ }
+\DoxyCodeLine{00085\ \};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mutex_container}{MutexContainer}}\ }
+\DoxyCodeLine{00099\ \{}
+\DoxyCodeLine{00100\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_mutex_container_aaf3ea7db5a22e75a2d267972f0b698e6}{MutexLogs}}\ =\ array<int64\_t,\ 3>;\ \ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keyword}{const}\ map<string,\ vector<MutexLogs>>\&\ \mbox{\hyperlink{class_mutex_container_ac1cee631d30d7c3f36081df0f3be7c6b}{getData}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mData;\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mutex_container_aa40ee2e9df6fb51d3f13dc9a7146de2c}{SetTimes}}(\textcolor{keyword}{const}\ int64\_t\ pTime,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{ThreadMutexState}}\&\ pHow);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00130\ \ \ \ \ map<string,\ vector<MutexLogs>>\ mData;\ }
+\DoxyCodeLine{00131\ \};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00142\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tag_container}{TagContainer}}\ }
+\DoxyCodeLine{00143\ \{}
+\DoxyCodeLine{00144\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keyword}{using\ }\mbox{\hyperlink{class_tag_container_a5634200364679e7eb184dcb6a1450266}{Tag}}\ =\ tuple<string,\ array<int64\_t,\ 2>>;\ \ }
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keyword}{const}\ vector<Tag>\&\ \mbox{\hyperlink{class_tag_container_afd3132de63542509d57e560c55098596}{getData}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mData;\ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tag_container_adbccae65d2ce19ab86942a2d3be07723}{SetTimes}}(\textcolor{keyword}{const}\ int64\_t\ pTime,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{TagState}}\&\ pTagState);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00171\ \ \ \ \ vector<Tag>\ mData;\ }
+\DoxyCodeLine{00172\ \};}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00174\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00183\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_thread}{DataThread}}\ }
+\DoxyCodeLine{00184\ \{}
+\DoxyCodeLine{00185\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00186\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{comment}{//\ Jobs}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_thread_ab167d59723957f69ea4769b3e4838615}{AddLog}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_jobs}{Jobs}}\&\ pLog)\ \{\ mJobsManager.AddLog(pLog);\ \}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keyword}{const}\ vector<Jobs>\&\ \mbox{\hyperlink{class_data_thread_aee0ee58ce0e471c7058e9451e53e1201}{GetJobs}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mJobsManager.GetJobs();\ \}}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00203\ \ \ \ \ \textcolor{comment}{//\ MutexLogs}}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00212\ \ \ \ \ \textcolor{keyword}{const}\ map<string,\ vector<MutexContainer::MutexLogs>>\&\ \mbox{\hyperlink{class_data_thread_a5967bd677d97cb1bc293b440829d3217}{getMutexLogs}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mMutexLogs.getData();\ \}}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00221\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_thread_aca2198e6584a4a1ccbdac274a0471e45}{setMutexTime}}(\textcolor{keyword}{const}\ int64\_t\ pTime,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{ThreadMutexState}}\&\ pHow)\ \{mMutexLogs.SetTimes(pTime,\ pName,\ pHow);\}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{comment}{//\ ======================================================================================}}
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{comment}{//\ Tags}}
+\DoxyCodeLine{00225\ }
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keyword}{const}\ vector<TagContainer::Tag>\&\ \mbox{\hyperlink{class_data_thread_a8b95de9a0801cc9e50ffaab25f5bb988}{getTags}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mTags.getData();\ \}}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00243\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data_thread_aef94aed8d195b98204b063abbf54d478}{setTagsTime}}(\textcolor{keyword}{const}\ int64\_t\ pTime,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{TagState}}\&\ pTagState)\ \{mTags.SetTimes(pTime,\ pName,\ pTagState);\}}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ }
+\DoxyCodeLine{00246\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00247\ \ \ \ \ \mbox{\hyperlink{class_jobs_manager}{JobsManager}}\ mJobsManager;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00248\ \ \ \ \ \mbox{\hyperlink{class_mutex_container}{MutexContainer}}\ mMutexLogs;\ \ \ \ \ \ }
+\DoxyCodeLine{00249\ \ \ \ \ \mbox{\hyperlink{class_tag_container}{TagContainer}}\ mTags;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00250\ \};}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ \_\_mDataTHREAD\_H\_\_}}
+
+\end{DoxyCode}

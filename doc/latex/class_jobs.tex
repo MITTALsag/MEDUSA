@@ -1,0 +1,272 @@
+\doxysection{Jobs Class Reference}
+\hypertarget{class_jobs}{}\label{class_jobs}\index{Jobs@{Jobs}}
+
+
+Fundamental executable job unit.  
+
+
+
+
+{\ttfamily \#include $<$Jobs.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}\label{class_jobs_a800c3a3a36cbf80c46c552e64002cc11} 
+using {\bfseries time\+\_\+point} = std\+::chrono\+::time\+\_\+point$<$std\+::chrono\+::steady\+\_\+clock$>$
+\begin{DoxyCompactList}\small\item\em High-\/resolution timestamp type for precise execution tracking. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jobs_a04bcc981d30d2c50a0f996735b005664}{Jobs}} (const string \&pname\+Job, std\+::function$<$ void(void)$>$ p\+Func, int64\+\_\+t p\+Parent\+Job\+Id=-\/1)
+\begin{DoxyCompactList}\small\item\em Constructs an executable job unit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jobs_abe582cbee553db81b3afe12d4e0088a3}{Jobs}} (\mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} p\+Time, \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} p\+T0, const string \&p\+Name\+Job="{}Quitting"{}, const string \&p\+Error="{}unamed"{})
+\begin{DoxyCompactList}\small\item\em Constructs a termination marker job. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jobs_acbaf8dbb4126f3b81736e583dcfa39ca}{Job\+Start}} (const \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} \&p\+T0, \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} p\+Start)
+\begin{DoxyCompactList}\small\item\em Records job initiation metrics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_jobs_a662ab0e14494798273223693f516422f}{Job\+Done}} (const \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} \&p\+T0, \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} p\+Stop, bool p\+Succes, const std\+::string \&p\+Error="{}"{})
+\begin{DoxyCompactList}\small\item\em Records job completion metrics. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_jobs_ab39236f17ed1f2951263ef47c86fd65a}{Get\+Job\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves job\textquotesingle{}s descriptive identifier. \end{DoxyCompactList}\item 
+int64\+\_\+t \mbox{\hyperlink{class_jobs_afcf1b84622d63cf4cf26b82e7a9ed63a}{Get\+Nb\+Job}} () const
+\begin{DoxyCompactList}\small\item\em Gets total jobs created in system. \end{DoxyCompactList}\item 
+int64\+\_\+t \mbox{\hyperlink{class_jobs_a253260e3f0218c84bf6d010323855152}{Get\+Job\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets unique job identifier. \end{DoxyCompactList}\item 
+int64\+\_\+t \mbox{\hyperlink{class_jobs_aa727004924ba0faa2f8069df5ab47a55}{Get\+Job\+Id\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Gets hierarchical parent identifier. \end{DoxyCompactList}\item 
+int64\+\_\+t \mbox{\hyperlink{class_jobs_acee46b52d695c74ffc8e666324e02e28}{Get\+Startmsec}} () const
+\begin{DoxyCompactList}\small\item\em Gets relative start time. \end{DoxyCompactList}\item 
+int64\+\_\+t \mbox{\hyperlink{class_jobs_a638dc36bfef6abb226262334f46fd459}{Get\+Stopmsec}} () const
+\begin{DoxyCompactList}\small\item\em Gets relative completion time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_jobs_aad4e8636cff4e9b39e2deae657edd708}{Is\+Success}} () const
+\begin{DoxyCompactList}\small\item\em Checks execution status. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_jobs_a3228195e9cf9e2ec037697e48ef62246}{Get\+Error}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves failure information. \end{DoxyCompactList}\item 
+std\+::function$<$ void(void)$>$ \mbox{\hyperlink{class_jobs_abdc07d5e6e17485a54b9e529ccfe6a04}{Get\+Func}} ()
+\begin{DoxyCompactList}\small\item\em Gets executable unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_jobs_a1af50c99695193dd128556aae2191ac3}\label{class_jobs_a1af50c99695193dd128556aae2191ac3} 
+static void {\bfseries Reset\+Job\+Counter} ()
+\begin{DoxyCompactList}\small\item\em Resets global job counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fundamental executable job unit. 
+
+Encapsulates work items with\+:
+\begin{DoxyItemize}
+\item Unique identification and hierarchical relationships
+\item Precise timing instrumentation
+\item Execution status tracking
+\item Callback function management
+\end{DoxyItemize}
+
+Forms the atomic unit of work in the dispatch queue system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_jobs_a04bcc981d30d2c50a0f996735b005664}\index{Jobs@{Jobs}!Jobs@{Jobs}}
+\index{Jobs@{Jobs}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{Jobs()}{Jobs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_jobs_a04bcc981d30d2c50a0f996735b005664} 
+Jobs\+::\+Jobs (\begin{DoxyParamCaption}\item[{const string \&}]{pname\+Job}{, }\item[{std\+::function$<$ void(void)$>$}]{p\+Func}{, }\item[{int64\+\_\+t}]{p\+Parent\+Job\+Id}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+
+
+Constructs an executable job unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pname\+Job} & Descriptive identifier for the job \\
+\hline
+{\em p\+Func} & Callable unit of work to execute \\
+\hline
+{\em p\+Parent\+Job\+Id} & Hierarchical parent identifier (-\/1 for root jobs)\\
+\hline
+\end{DoxyParams}
+Automatically assigns unique sequential ID and maintains parent-\/child relationships for job dependency tracking. \Hypertarget{class_jobs_abe582cbee553db81b3afe12d4e0088a3}\index{Jobs@{Jobs}!Jobs@{Jobs}}
+\index{Jobs@{Jobs}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{Jobs()}{Jobs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_jobs_abe582cbee553db81b3afe12d4e0088a3} 
+Jobs\+::\+Jobs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}}}]{p\+Time}{, }\item[{\mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}}}]{p\+T0}{, }\item[{const string \&}]{p\+Name\+Job}{ = {\ttfamily "{}Quitting"{}}, }\item[{const string \&}]{p\+Error}{ = {\ttfamily "{}unamed"{}}}\end{DoxyParamCaption})}
+
+
+
+Constructs a termination marker job. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Time} & Timestamp of termination event \\
+\hline
+{\em p\+T0} & System reference timestamp \\
+\hline
+{\em p\+Name\+Job} & Description of termination cause \\
+\hline
+{\em p\+Error} & Optional error information \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jobs_a3228195e9cf9e2ec037697e48ef62246}\index{Jobs@{Jobs}!GetError@{GetError}}
+\index{GetError@{GetError}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetError()}{GetError()}}
+{\footnotesize\ttfamily \label{class_jobs_a3228195e9cf9e2ec037697e48ef62246} 
+std\+::string Jobs\+::\+Get\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves failure information. 
+
+\begin{DoxyReturn}{Returns}
+Description of failure condition 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_abdc07d5e6e17485a54b9e529ccfe6a04}\index{Jobs@{Jobs}!GetFunc@{GetFunc}}
+\index{GetFunc@{GetFunc}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetFunc()}{GetFunc()}}
+{\footnotesize\ttfamily \label{class_jobs_abdc07d5e6e17485a54b9e529ccfe6a04} 
+std\+::function$<$ void(void)$>$ Jobs\+::\+Get\+Func (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets executable unit. 
+
+\begin{DoxyReturn}{Returns}
+Callable job function 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_a253260e3f0218c84bf6d010323855152}\index{Jobs@{Jobs}!GetJobId@{GetJobId}}
+\index{GetJobId@{GetJobId}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetJobId()}{GetJobId()}}
+{\footnotesize\ttfamily \label{class_jobs_a253260e3f0218c84bf6d010323855152} 
+int64\+\_\+t Jobs\+::\+Get\+Job\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets unique job identifier. 
+
+\begin{DoxyReturn}{Returns}
+This job\textquotesingle{}s unique ID 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_aa727004924ba0faa2f8069df5ab47a55}\index{Jobs@{Jobs}!GetJobIdParent@{GetJobIdParent}}
+\index{GetJobIdParent@{GetJobIdParent}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetJobIdParent()}{GetJobIdParent()}}
+{\footnotesize\ttfamily \label{class_jobs_aa727004924ba0faa2f8069df5ab47a55} 
+int64\+\_\+t Jobs\+::\+Get\+Job\+Id\+Parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets hierarchical parent identifier. 
+
+\begin{DoxyReturn}{Returns}
+Parent job ID or -\/1 if root job 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_ab39236f17ed1f2951263ef47c86fd65a}\index{Jobs@{Jobs}!GetJobName@{GetJobName}}
+\index{GetJobName@{GetJobName}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetJobName()}{GetJobName()}}
+{\footnotesize\ttfamily \label{class_jobs_ab39236f17ed1f2951263ef47c86fd65a} 
+std\+::string Jobs\+::\+Get\+Job\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves job\textquotesingle{}s descriptive identifier. 
+
+\begin{DoxyReturn}{Returns}
+Human-\/readable job name 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_afcf1b84622d63cf4cf26b82e7a9ed63a}\index{Jobs@{Jobs}!GetNbJob@{GetNbJob}}
+\index{GetNbJob@{GetNbJob}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetNbJob()}{GetNbJob()}}
+{\footnotesize\ttfamily \label{class_jobs_afcf1b84622d63cf4cf26b82e7a9ed63a} 
+int64\+\_\+t Jobs\+::\+Get\+Nb\+Job (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets total jobs created in system. 
+
+\begin{DoxyReturn}{Returns}
+Global job counter value 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_acee46b52d695c74ffc8e666324e02e28}\index{Jobs@{Jobs}!GetStartmsec@{GetStartmsec}}
+\index{GetStartmsec@{GetStartmsec}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetStartmsec()}{GetStartmsec()}}
+{\footnotesize\ttfamily \label{class_jobs_acee46b52d695c74ffc8e666324e02e28} 
+int64\+\_\+t Jobs\+::\+Get\+Startmsec (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets relative start time. 
+
+\begin{DoxyReturn}{Returns}
+Milliseconds since reference epoch 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_a638dc36bfef6abb226262334f46fd459}\index{Jobs@{Jobs}!GetStopmsec@{GetStopmsec}}
+\index{GetStopmsec@{GetStopmsec}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{GetStopmsec()}{GetStopmsec()}}
+{\footnotesize\ttfamily \label{class_jobs_a638dc36bfef6abb226262334f46fd459} 
+int64\+\_\+t Jobs\+::\+Get\+Stopmsec (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets relative completion time. 
+
+\begin{DoxyReturn}{Returns}
+Milliseconds since reference epoch 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_aad4e8636cff4e9b39e2deae657edd708}\index{Jobs@{Jobs}!IsSuccess@{IsSuccess}}
+\index{IsSuccess@{IsSuccess}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{IsSuccess()}{IsSuccess()}}
+{\footnotesize\ttfamily \label{class_jobs_aad4e8636cff4e9b39e2deae657edd708} 
+bool Jobs\+::\+Is\+Success (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Checks execution status. 
+
+\begin{DoxyReturn}{Returns}
+True if job completed successfully 
+\end{DoxyReturn}
+\Hypertarget{class_jobs_a662ab0e14494798273223693f516422f}\index{Jobs@{Jobs}!JobDone@{JobDone}}
+\index{JobDone@{JobDone}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{JobDone()}{JobDone()}}
+{\footnotesize\ttfamily \label{class_jobs_a662ab0e14494798273223693f516422f} 
+void Jobs\+::\+Job\+Done (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} \&}]{p\+T0}{, }\item[{\mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}}}]{p\+Stop}{, }\item[{bool}]{p\+Succes}{, }\item[{const std\+::string \&}]{p\+Error}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+
+
+Records job completion metrics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+T0} & System reference timestamp \\
+\hline
+{\em p\+Stop} & Completion timestamp \\
+\hline
+{\em p\+Succes} & Execution status \\
+\hline
+{\em p\+Error} & Optional failure description \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_jobs_acbaf8dbb4126f3b81736e583dcfa39ca}\index{Jobs@{Jobs}!JobStart@{JobStart}}
+\index{JobStart@{JobStart}!Jobs@{Jobs}}
+\doxysubsubsection{\texorpdfstring{JobStart()}{JobStart()}}
+{\footnotesize\ttfamily \label{class_jobs_acbaf8dbb4126f3b81736e583dcfa39ca} 
+void Jobs\+::\+Job\+Start (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}} \&}]{p\+T0}{, }\item[{\mbox{\hyperlink{class_jobs_a800c3a3a36cbf80c46c552e64002cc11}{time\+\_\+point}}}]{p\+Start}{}\end{DoxyParamCaption})}
+
+
+
+Records job initiation metrics. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+T0} & System reference timestamp \\
+\hline
+{\em p\+Start} & Activation timestamp \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Lz\+Async/\+Jobs/\mbox{\hyperlink{_jobs_8h}{Jobs.\+h}}\item 
+Lz\+Async/\+Jobs/Jobs.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,211 @@
+\doxysection{Dispatch\+Q.\+h}
+\hypertarget{_dispatch_q_8h_source}{}\label{_dispatch_q_8h_source}\index{LzAsync/DispatchQ.h@{LzAsync/DispatchQ.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{comment}{//=======\ Includes\ =======}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}LzLib\_Async.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_jobs_8h}{Jobs/Jobs.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_data_thread_8h}{DataThread/DataThread.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <LzServices/List.h>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <mutex>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <condition\_variable>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <atomic>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <unistd.h>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}json.hpp"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{comment}{//=======\ DLL\ exports\ =======}}
+\DoxyCodeLine{00025\ \textcolor{keyword}{namespace\ }LzAsync}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{class\ }DLL\_EXPORT\_LzAsync\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}};}
+\DoxyCodeLine{00028\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{comment}{//=======\ Namespace\ and\ Declarations\ ========}}
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }LzAsync}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{using\ }LzServices::List;}
+\DoxyCodeLine{00034\ \textcolor{keyword}{using\ }std::string;}
+\DoxyCodeLine{00035\ \textcolor{keyword}{using\ }std::vector;}
+\DoxyCodeLine{00036\ \textcolor{keyword}{using\ }std::mutex;}
+\DoxyCodeLine{00037\ \textcolor{keyword}{using\ }std::queue;}
+\DoxyCodeLine{00038\ \textcolor{keyword}{using\ }std::pair;}
+\DoxyCodeLine{00039\ \textcolor{keyword}{using\ }std::condition\_variable;}
+\DoxyCodeLine{00040\ \textcolor{keyword}{using\ }std::atomic\_bool;}
+\DoxyCodeLine{00041\ \textcolor{keyword}{using\ }std::map\ ;}
+\DoxyCodeLine{00042\ \textcolor{keyword}{using\ }std::cout\ ;}
+\DoxyCodeLine{00043\ \textcolor{keyword}{using\ }std::endl\ ;}
+\DoxyCodeLine{00044\ \textcolor{keyword}{using\ }nlohmann::json\_abi\_v3\_12\_0::ordered\_json;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}}
+\DoxyCodeLine{00064\ \{}
+\DoxyCodeLine{00065\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ Thread\ types}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{using\ }func\ =\ std::function<void(\textcolor{keywordtype}{void})>;\ \textcolor{comment}{//\ prec\ :\ job}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{using\ }func\_and\_name\ =\ std::pair<const\ string,\ func>;\ \textcolor{comment}{//\ prec\ :\ named\_job}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}(\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ pName=\textcolor{stringliteral}{"{}<unnamed>"{}},\ \textcolor{keywordtype}{size\_t}\ pThread\_cnt=1\ );}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a691adf43c369b7daa9dcf1947b4859f8}{\string~DispatchQ}}();}
+\DoxyCodeLine{00084\ \ \ \ \ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_afd5ad1288000824456ab0ae32de4c33e}{getName}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ mName;\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a052d64843651965e951c4b2d7c0ab6cb}{startProfiling}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ pRealTime\ =\ \textcolor{keyword}{false},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pToFile\ =\ \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_ad61f88ed53435d5ef62d4f19c53d2f76}{stopProfiling}}()\ \{\ mEnableLogs\ =\ \textcolor{keyword}{false};\ \}\ \ \textcolor{comment}{//Refaire\ plus\ tard}}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a0c37e85929c3cc4218d9107e36b6d3e0}{GetNbErrors}}()\ \{\ \textcolor{keywordflow}{return}\ mNb\_Errors;\ \}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a50ecacfdf585e6b14d80e4717d76d6c1}{GetNbSuccess}}()\ \{\ \textcolor{keywordflow}{return}\ mNb\_Success;\ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abc6e463d4da5f8e177b5ba1e997bc22b}{waitForIdle}}(\ \textcolor{keywordtype}{bool}\ pRestartPool\ )\ \{\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a469179109fad56da241eb69d0bc352ba}{finish}}(mIdleQuit,\ pRestartPool);\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_ab69bcb2a916a584857b29609cdadcaa8}{completeJobs}}(\ \textcolor{keywordtype}{bool}\ pRestartPool\ )\ \{\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a469179109fad56da241eb69d0bc352ba}{finish}}(mEmptyQuit,\ pRestartPool);\ \}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a079024b24e869dc81be0c79443c9049d}{interruptJobs}}(\ \textcolor{keywordtype}{bool}\ pRestartPool\ )\ \{\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a469179109fad56da241eb69d0bc352ba}{finish}}(mEmptyQuit,\ pRestartPool);\ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a359992e200f430995c231c29689076dd}{ExportLogsJson}}(\textcolor{keyword}{const}\ std::string\ \&\ pToFile);}
+\DoxyCodeLine{00200\ \ \ \ \ }
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a8745c500d0fed67a37ce31e1bb61e31c}{MutexNeed}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a6c7298a6183fdfa8354710af6fcafa84}{MutexHave}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName);}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a1b2fb6f45ec07dbdfb0ec89efc4553d8}{MutexFree}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName);}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a74db623cd927b19a3ccc67d96a4df7f4}{TagStart}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ std::string\&\ pName);}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00246\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_acbb661e96fc20ee813e5d74f3f53df90}{TagStop}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ std::string\&\ pName);}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00257\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a066dfa43a61bb7f3c66ae13cc1107dc1}{restartPool}}(\ \textcolor{keywordtype}{size\_t}\ pNbWorkers,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pToFile\ =\ \textcolor{stringliteral}{"{}"{}}\ );}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00264\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abcff76d8da93d6c99c9384d11bea61c1}{dispatch}}(\ \textcolor{keyword}{const}\ func\ \&\ pJob,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ pName=\textcolor{stringliteral}{"{}<unnamed>"{}}\ );}
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abcff76d8da93d6c99c9384d11bea61c1}{dispatch}}(\ \textcolor{keyword}{const}\ vector<func>\ \&\ pJobs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ pName=\textcolor{stringliteral}{"{}<unnamed>"{}}\ );}
+\DoxyCodeLine{00266\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abcff76d8da93d6c99c9384d11bea61c1}{dispatch}}(\ \textcolor{keyword}{const}\ List<func>\ \&\ pJobs,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ pName=\textcolor{stringliteral}{"{}<unnamed>"{}}\ );}
+\DoxyCodeLine{00267\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abcff76d8da93d6c99c9384d11bea61c1}{dispatch}}(\ func\_and\_name\ \&\&\ pNamedJob\ );}
+\DoxyCodeLine{00268\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abcff76d8da93d6c99c9384d11bea61c1}{dispatch}}(\ \textcolor{keyword}{const}\ List<func\_and\_name>\ \&\ pNamedJobs\ );}
+\DoxyCodeLine{00269\ }
+\DoxyCodeLine{00270\ \ \ \ \ \textcolor{keywordtype}{void}\ addLogEntry(\ \textcolor{keyword}{const}\ std::thread::id\ pId,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_jobs}{Jobs}}\ \&\ pLog,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ update\ )\ ;}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00272\ }
+\DoxyCodeLine{00277\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_abcff76d8da93d6c99c9384d11bea61c1}{dispatch}}(\ func\ \&\&\ pJob,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&\ pName=\textcolor{stringliteral}{"{}<unnamed>"{}}\ );}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00279\ \ \ \ \ \textcolor{comment}{//\ Deleted\ operations}}
+\DoxyCodeLine{00280\ \ \ \ \ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\ \&\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00281\ \ \ \ \ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\ \&\ operator=(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\ \&\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00282\ \ \ \ \ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}(\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\ \&\&\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00283\ \ \ \ \ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\ \&\ operator=(\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q}{DispatchQ}}\ \&\&\ )\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00290\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a469179109fad56da241eb69d0bc352ba}{finish}}(\ \textcolor{keywordtype}{bool}\ \&\ pQuitReason,\ \textcolor{keywordtype}{bool}\ pRestartPool\ );}
+\DoxyCodeLine{00291\ }
+\DoxyCodeLine{00311\ \ \ \ \ \textcolor{keywordtype}{void}\ statusChangeMutex(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{ThreadMutexState}}\&\ pThreadMutexState);}
+\DoxyCodeLine{00312\ }
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00329\ \ \ \ \ \textcolor{keywordtype}{void}\ ChangeTags(\textcolor{keyword}{const}\ std::string\&\ pName,\ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{TagState}}\&\ pTagState);}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00332\ }
+\DoxyCodeLine{00333\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00334\ \ \ \ \ \textcolor{comment}{//\ Real-\/time\ JSON\ management}}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keywordtype}{void}\ InitRealTimeJson();}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00346\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateHeaderJson();}
+\DoxyCodeLine{00347\ }
+\DoxyCodeLine{00353\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateJsonJobStart(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_jobs}{Jobs}}\&\ pJob);}
+\DoxyCodeLine{00354\ }
+\DoxyCodeLine{00361\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateJsonJobStop(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_jobs}{Jobs}}\&\ pJob);}
+\DoxyCodeLine{00362\ }
+\DoxyCodeLine{00368\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateQuittingJsonJob(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_jobs}{Jobs}}\&\ pJob);}
+\DoxyCodeLine{00369\ }
+\DoxyCodeLine{00377\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateJsonMutex(\textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{ThreadMutexState}}\&\ pThreadMutexState,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ pName,\ \textcolor{keyword}{const}\ int64\_t\ pTime)\ ;}
+\DoxyCodeLine{00378\ }
+\DoxyCodeLine{00386\ \ \ \ \ \textcolor{keywordtype}{void}\ UpdateJsonTag(\textcolor{keyword}{const}\ \mbox{\hyperlink{_data_thread_8h_aec9c78c91e600305a61ee817a2c2a93e}{TagState}}\&\ pTagState,\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ pName,\ \textcolor{keyword}{const}\ int64\_t\ pTime);}
+\DoxyCodeLine{00387\ }
+\DoxyCodeLine{00393\ \ \ \ \ \textcolor{keywordtype}{void}\ ExportRealTimeJson(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pToFile);}
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00396\ \ \ \ \ \textcolor{comment}{//\ Main\ Thread\ Function}}
+\DoxyCodeLine{00397\ \ \ \ \ }
+\DoxyCodeLine{00402\ \ \ \ \ \textcolor{keywordtype}{void}\ threadFunc();}
+\DoxyCodeLine{00403\ \ \ \ \ }
+\DoxyCodeLine{00404\ }
+\DoxyCodeLine{00405\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00407\ \ \ \ \ \textcolor{keyword}{using\ }time\_point\ =\ std::chrono::time\_point<std::chrono::steady\_clock>;}
+\DoxyCodeLine{00408\ }
+\DoxyCodeLine{00409\ \ \ \ \ time\_point\ sT0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00410\ \ \ \ \ }
+\DoxyCodeLine{00411\ \ \ \ \ \textcolor{keywordtype}{string}\ mName;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00412\ \ \ \ \ vector<std::thread>\ mThreads;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00413\ \ \ \ \ mutex\ mTexMex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00414\ }
+\DoxyCodeLine{00415\ \ \ \ \ queue<Jobs>\ mQ;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00416\ \ \ \ \ std::atomic<int>\ mNbWorksInProgress\{\ 0\ \};\ \ \ }
+\DoxyCodeLine{00417\ \ \ \ \ condition\_variable\ mCV;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00418\ \ \ \ \ }
+\DoxyCodeLine{00419\ \ \ \ \ \textcolor{comment}{//Quit\ status}}
+\DoxyCodeLine{00420\ \ \ \ \ \textcolor{keywordtype}{bool}\ mForceQuit\{\ \textcolor{keyword}{false}\ \};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00421\ \ \ \ \ \textcolor{keywordtype}{bool}\ mEmptyQuit\{\ \textcolor{keyword}{false}\ \};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00422\ \ \ \ \ \textcolor{keywordtype}{bool}\ mIdleQuit\{\ \textcolor{keyword}{false}\ \};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00423\ }
+\DoxyCodeLine{00424\ \ \ \ \ \textcolor{comment}{//\ Mutex\ protected\ data}}
+\DoxyCodeLine{00425\ \ \ \ \ mutex\ mLogMex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00426\ \ \ \ \ \textcolor{comment}{//\ Profiling\ or\ not?}}
+\DoxyCodeLine{00427\ \ \ \ \ atomic\_bool\ mEnableLogs\ \{\textcolor{keyword}{false}\};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00428\ \ \ \ \ map<std::thread::id,\ DataThread>\ mLogs;\ \ \ \ \ }
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00430\ \ \ \ \ \textcolor{comment}{//\ For\ the\ heredity\ of\ Jobs}}
+\DoxyCodeLine{00431\ \ \ \ \ map<std::thread::id,\ Jobs*>\ mCurrentJobs;\ \ \ }
+\DoxyCodeLine{00432\ \ \ \ \ mutex\ mCurrentJobsMutex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00433\ }
+\DoxyCodeLine{00434\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mNb\_Success\ \{0\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00435\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mNb\_Errors\ \{0\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00436\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mNbQuitting\ \{0\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00437\ }
+\DoxyCodeLine{00438\ \ \ \ \ mutex\ mRealTimeMutex;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00439\ \ \ \ \ ordered\_json\ mRealTimeJson;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00440\ \ \ \ \ \textcolor{keywordtype}{bool}\ mRealTime\ \{\textcolor{keyword}{false}\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00441\ \ \ \ \ std::thread\ mRealTimeThread;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00442\ \ \ \ \ condition\_variable\ mRealTimeCV;}
+\DoxyCodeLine{00443\ \ \ \ \ std::atomic<size\_t>\ mNbUpdate\{\ 0\ \};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00444\ \ \ \ \ \textcolor{keywordtype}{bool}\ mAllDqWorkerQuit\ \{\textcolor{keyword}{false}\};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00445\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mRealTimeSuccess\ =\ 0\ ;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00446\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mRealTimeErrors\ =\ 0\ ;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00447\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mRunningJobs\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00448\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ mNbRealTimeQuitting\ =\ 0;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00449\ \};}
+\DoxyCodeLine{00450\ }
+\DoxyCodeLine{00451\ }
+\DoxyCodeLine{00452\ }
+\DoxyCodeLine{00453\ \textcolor{comment}{//================================================================================}}
+\DoxyCodeLine{00460\ }
+\DoxyCodeLine{00461\ \textcolor{comment}{//\ Mutex\ logs}}
+\DoxyCodeLine{00462\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a8745c500d0fed67a37ce31e1bb61e31c}{MutexNeed}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName)\ \{\ pDQ.statusChangeMutex(pName,\ ThreadMutexState::NEED);\ \}}
+\DoxyCodeLine{00463\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a6c7298a6183fdfa8354710af6fcafa84}{MutexHave}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName)\ \{\ pDQ.statusChangeMutex(pName,\ ThreadMutexState::HAVE);\ \}}
+\DoxyCodeLine{00464\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a1b2fb6f45ec07dbdfb0ec89efc4553d8}{MutexFree}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ pName)\ \{\ pDQ.statusChangeMutex(pName,\ ThreadMutexState::FREE);\ \}}
+\DoxyCodeLine{00465\ }
+\DoxyCodeLine{00466\ \textcolor{comment}{//}}
+\DoxyCodeLine{00467\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_a74db623cd927b19a3ccc67d96a4df7f4}{TagStart}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ std::string\&\ pName)\ \{\ pDQ.ChangeTags(pName,\ TagState::START);\ \}}
+\DoxyCodeLine{00468\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_lz_async_1_1_dispatch_q_acbb661e96fc20ee813e5d74f3f53df90}{TagStop}}(\mbox{\hyperlink{class_lz_async_1_1_dispatch_q_aca1626bdc6328826e471abcd9cf05626}{DispatchQ}}\&\ pDQ,\ \textcolor{keyword}{const}\ std::string\&\ pName)\ \{\ pDQ.ChangeTags(pName,\ TagState::STOP);\ \}}
+\DoxyCodeLine{00469\ }
+\DoxyCodeLine{00470\ \}}
+
+\end{DoxyCode}

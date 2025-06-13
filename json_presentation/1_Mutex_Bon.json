@@ -1,0 +1,146 @@
+{
+    "final_time": 489,
+    "nb_threads": 3,
+    "nb_jobs_OK": 3,
+    "nb_jobs_KO": 0,
+    "nb_running_jobs": 0,
+    "nb_quitting": 3,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16f4f7000",
+            "jobs": [
+                {
+                    "nomJ": "Job1_Deadlock",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 161,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 489,
+                    "fin": 489,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": 161
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 51,
+                    "HAVE": 51,
+                    "FREE": 161
+                },
+                {
+                    "NameM": "mutexC",
+                    "NEED": 106,
+                    "HAVE": 106,
+                    "FREE": 161
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_1",
+            "idT": "0x16f583000",
+            "jobs": [
+                {
+                    "nomJ": "Job2_Deadlock",
+                    "id": 1,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 322,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 489,
+                    "fin": 489,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 161,
+                    "FREE": 322
+                },
+                {
+                    "NameM": "mutexC",
+                    "NEED": 216,
+                    "HAVE": 216,
+                    "FREE": 322
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 267,
+                    "HAVE": 267,
+                    "FREE": 322
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_2",
+            "idT": "0x16f60f000",
+            "jobs": [
+                {
+                    "nomJ": "Job1_Deadlock 2",
+                    "id": 2,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": 488,
+                    "success": true,
+                    "error": ""
+                },
+                {
+                    "nomJ": "Quitting",
+                    "id": -1,
+                    "id parent": -1,
+                    "debut": 488,
+                    "fin": 488,
+                    "success": true,
+                    "error": "Idle quitting"
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 322,
+                    "FREE": 488
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 377,
+                    "HAVE": 377,
+                    "FREE": 488
+                },
+                {
+                    "NameM": "mutexC",
+                    "NEED": 433,
+                    "HAVE": 433,
+                    "FREE": 488
+                }
+            ],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

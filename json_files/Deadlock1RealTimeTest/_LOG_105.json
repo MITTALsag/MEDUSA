@@ -1,0 +1,71 @@
+{
+    "final_time": 105,
+    "nb_threads": 2,
+    "nb_jobs_OK": 0,
+    "nb_jobs_KO": 0,
+    "nb_running_jobs": 2,
+    "nb_quitting": 0,
+    "threads": [
+        {
+            "nomT": "Thread_0",
+            "idT": "0x16d8bb000",
+            "jobs": [
+                {
+                    "nomJ": "Job2_Deadlock",
+                    "id": 1,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexB",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexA",
+                    "NEED": 105,
+                    "HAVE": -1,
+                    "FREE": -1
+                }
+            ],
+            "Tags": []
+        },
+        {
+            "nomT": "Thread_1",
+            "idT": "0x16d947000",
+            "jobs": [
+                {
+                    "nomJ": "Job1_Deadlock",
+                    "id": 0,
+                    "id parent": -1,
+                    "debut": 0,
+                    "fin": -1,
+                    "success": -1,
+                    "error": -1
+                }
+            ],
+            "StateSwitch": [
+                {
+                    "NameM": "mutexA",
+                    "NEED": 0,
+                    "HAVE": 0,
+                    "FREE": -1
+                },
+                {
+                    "NameM": "mutexB",
+                    "NEED": 102,
+                    "HAVE": -1,
+                    "FREE": -1
+                }
+            ],
+            "Tags": []
+        }
+    ],
+    "DeadLock": null
+}

@@ -1,0 +1,91 @@
+\doxysection{Mutex\+Container Class Reference}
+\hypertarget{class_mutex_container}{}\label{class_mutex_container}\index{MutexContainer@{MutexContainer}}
+
+
+Mutex operation tracker.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Thread.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mutex_container_aaf3ea7db5a22e75a2d267972f0b698e6}\label{class_mutex_container_aaf3ea7db5a22e75a2d267972f0b698e6} 
+using {\bfseries Mutex\+Logs} = array$<$int64\+\_\+t, 3$>$
+\begin{DoxyCompactList}\small\item\em Timestamp array tracking \mbox{[}request\+\_\+time, acquisition\+\_\+time, release\+\_\+time\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const map$<$ string, vector$<$ \mbox{\hyperlink{class_mutex_container_aaf3ea7db5a22e75a2d267972f0b698e6}{Mutex\+Logs}} $>$ $>$ \& \mbox{\hyperlink{class_mutex_container_ac1cee631d30d7c3f36081df0f3be7c6b}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves complete mutex timing data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mutex_container_aa40ee2e9df6fb51d3f13dc9a7146de2c}{Set\+Times}} (const int64\+\_\+t p\+Time, const string \&p\+Name, const \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{Thread\+Mutex\+State}} \&p\+How)
+\begin{DoxyCompactList}\small\item\em Records a mutex state transition timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Mutex operation tracker. 
+
+Records precise timing of mutex state transitions with nanosecond resolution for contention analysis.
+
+Stores data as \mbox{[}request\+\_\+time, acquire\+\_\+time, release\+\_\+time\mbox{]} tuples indexed by mutex name. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mutex_container_ac1cee631d30d7c3f36081df0f3be7c6b}\index{MutexContainer@{MutexContainer}!getData@{getData}}
+\index{getData@{getData}!MutexContainer@{MutexContainer}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_mutex_container_ac1cee631d30d7c3f36081df0f3be7c6b} 
+const map$<$ string, vector$<$ \mbox{\hyperlink{class_mutex_container_aaf3ea7db5a22e75a2d267972f0b698e6}{Mutex\+Logs}} $>$ $>$ \& Mutex\+Container\+::get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves complete mutex timing data. 
+
+\begin{DoxyReturn}{Returns}
+const reference to the mutex log database
+\end{DoxyReturn}
+Returns a read-\/only view of all collected mutex timing information, organized by mutex name with associated timestamp triplets \Hypertarget{class_mutex_container_aa40ee2e9df6fb51d3f13dc9a7146de2c}\index{MutexContainer@{MutexContainer}!SetTimes@{SetTimes}}
+\index{SetTimes@{SetTimes}!MutexContainer@{MutexContainer}}
+\doxysubsubsection{\texorpdfstring{SetTimes()}{SetTimes()}}
+{\footnotesize\ttfamily \label{class_mutex_container_aa40ee2e9df6fb51d3f13dc9a7146de2c} 
+void Mutex\+Container\+::\+Set\+Times (\begin{DoxyParamCaption}\item[{const int64\+\_\+t}]{p\+Time}{, }\item[{const string \&}]{p\+Name}{, }\item[{const \mbox{\hyperlink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{Thread\+Mutex\+State}} \&}]{p\+How}{}\end{DoxyParamCaption})}
+
+
+
+Records a mutex state transition timestamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Time} & The precise timestamp of the event (millisecond since Dispatch\+Q\+::s\+T0) \\
+\hline
+{\em p\+Name} & The identifier of the mutex being tracked \\
+\hline
+{\em p\+How} & The transition type (NEED/\+HAVE/\+FREE) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if attempting to record a state transition without existing log \\
+\hline
+{\em std\+::invalid\+\_\+argument} & if provided an invalid \doxylink{_data_thread_8h_a2942e7d96a852f9627c67e8f871658d3}{Thread\+Mutex\+State} value \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item Each mutex log contains three timestamps corresponding to\+:
+\begin{DoxyEnumerate}
+\item NEED (request time)
+\item HAVE (acquisition time)
+\item FREE (release time)
+\end{DoxyEnumerate}
+\item State transitions must follow NEED-\/\texorpdfstring{$>$}{>}HAVE-\/\texorpdfstring{$>$}{>}FREE sequence 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Lz\+Async/\+Data\+Thread/\mbox{\hyperlink{_data_thread_8h}{Data\+Thread.\+h}}\item 
+Lz\+Async/\+Data\+Thread/Data\+Thread.\+cpp\end{DoxyCompactItemize}
