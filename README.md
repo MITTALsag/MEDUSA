@@ -15,10 +15,6 @@ MEDUSA PROJECT aims to debug C++ multithreaded programs by visualizing threads e
 - 🛠️ [Utilisation](#utilisation)
     * [Backend](#backend)
     * [Frontend (GUI)](#frontend-gui)
-- ✅ [Exemples](#exemple)
-- 🤝 [Contribution](#contribution)
-- 🏗️ [Build with](#build-with)
-- 📚 [Documentation](#documentation)
 - 📝 [Licence](#licence)
 
 
@@ -647,38 +643,6 @@ Displays detailed textual information about the execution, updated according to 
 
 Together, these elements provide a powerful and intuitive interface to analyze multi-threaded executions, track job dependencies, visualize mutex usage, and debug complex synchronization issues.
 
-
-## Exemple
-
-## Contribution
-
-[### Sous-titre + description avec exemple des commandes à lancer pour l'ensemble du flux de contribution sur le dépôt]
-
-## Build with
-
-### Langages & Frameworks
-
-[Liste de tout ce qui permet la confection du projet avec description + lien vers la documentation]
-
-### Outils
-
-#### CI
-
-[Liste de tout ce qui permet l'intégration automatisée du projet avec description + lien vers la documentation et mise en avant des comptes, organisations et variables]
-
-#### Déploiement
-
-[Liste de tout ce qui permet le déploiement du projet avec description + lien vers la documentation et mise en avant des comptes, organisations et variables]
-
-## Documentation
-
-[Lien vers documentations externes ou documentation embarquée ici avec table des matières]
-
-## Gestion des versions
-
-Afin de maintenir un cycle de publication claire et de favoriser la rétrocompatibilité, la dénomination des versions suit la spécification décrite par la [Gestion sémantique de version](https://semver.org/lang/fr/)
-
-Les versions disponibles ainsi que les journaux décrivant les changements apportés sont disponibles depuis [la page des Releases][mettre le lien ici].
 
 ## Licence
 
