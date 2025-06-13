@@ -1,5 +1,6 @@
 var classjson__pointer =
 [
+    [ "string_t", "classjson__pointer.html#a21dae78c5120aa3044d4c0fa1d970291", null ],
     [ "json_pointer", "classjson__pointer.html#a5288b8f5d6ff6faca37f664b98a16ecd", null ],
     [ "back", "classjson__pointer.html#aba71e63e4032cfc46dd90aeb09e5cb0f", null ],
     [ "empty", "classjson__pointer.html#a5c3d08bd0a0e99c3377db33600c68a64", null ],
@@ -12,6 +13,8 @@ var classjson__pointer =
     [ "push_back", "classjson__pointer.html#adbe97f9c00a221fb7be88d940b39a24f", null ],
     [ "push_back", "classjson__pointer.html#a6fa4848eafc232ae1af91c3d2696897e", null ],
     [ "to_string", "classjson__pointer.html#a6b94e2003be4cd72c4f145bcea2578ec", null ],
+    [ "basic_json", "classjson__pointer.html#ada3100cdb8700566051828f1355fa745", null ],
+    [ "json_pointer", "classjson__pointer.html#ab0a623288bc1272870149ad50f799a73", null ],
     [ "operator!=", "classjson__pointer.html#ac45cd9ddda9dd7a4682f0c57f4077fc1", null ],
     [ "operator!=", "classjson__pointer.html#ae0bb92b1f034ac1738d44eb7540f8f66", null ],
     [ "operator!=", "classjson__pointer.html#a32b28c0ef5f1c96b646817a0c360d7e6", null ],

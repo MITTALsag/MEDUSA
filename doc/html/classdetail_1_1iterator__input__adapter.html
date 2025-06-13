@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: detail::iterator_input_adapter&lt; IteratorType &gt; Class Template Reference</title>
+<title>MEDUSA PROJECT: detail::iterator_input_adapter&lt; IteratorType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -110,33 +110,167 @@ $(function(){initNavTree('classdetail_1_1iterator__input__adapter.html',''); ini
   <div class="headertitle"><div class="title">detail::iterator_input_adapter&lt; IteratorType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="json_8hpp_source.html">json.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6c852966a1cd5719ae32e8e486691fbe" id="r_a6c852966a1cd5719ae32e8e486691fbe"><td class="memItemLeft" align="right" valign="top"><a id="a6c852966a1cd5719ae32e8e486691fbe" name="a6c852966a1cd5719ae32e8e486691fbe"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>char_type</b> = typename std::iterator_traits&lt;IteratorType&gt;::value_type</td></tr>
+<tr class="memitem:a6c852966a1cd5719ae32e8e486691fbe" id="r_a6c852966a1cd5719ae32e8e486691fbe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c852966a1cd5719ae32e8e486691fbe">char_type</a> = typename std::iterator_traits&lt;IteratorType&gt;::value_type</td></tr>
 <tr class="separator:a6c852966a1cd5719ae32e8e486691fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6bbdb33434a11f90d6bfe2a9a71ee356" id="r_a6bbdb33434a11f90d6bfe2a9a71ee356"><td class="memItemLeft" align="right" valign="top"><a id="a6bbdb33434a11f90d6bfe2a9a71ee356" name="a6bbdb33434a11f90d6bfe2a9a71ee356"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_input_adapter</b> (IteratorType first, IteratorType last)</td></tr>
+<tr class="memitem:a6bbdb33434a11f90d6bfe2a9a71ee356" id="r_a6bbdb33434a11f90d6bfe2a9a71ee356"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bbdb33434a11f90d6bfe2a9a71ee356">iterator_input_adapter</a> (IteratorType first, IteratorType last)</td></tr>
 <tr class="separator:a6bbdb33434a11f90d6bfe2a9a71ee356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c71e463d5ad1e7e60f83be0c0a2f3ca" id="r_a3c71e463d5ad1e7e60f83be0c0a2f3ca"><td class="memItemLeft" align="right" valign="top"><a id="a3c71e463d5ad1e7e60f83be0c0a2f3ca" name="a3c71e463d5ad1e7e60f83be0c0a2f3ca"></a>
-<a class="el" href="structdetail_1_1char__traits.html">char_traits</a>&lt; char_type &gt;::int_type&#160;</td><td class="memItemRight" valign="bottom"><b>get_character</b> ()</td></tr>
+<tr class="memitem:a3c71e463d5ad1e7e60f83be0c0a2f3ca" id="r_a3c71e463d5ad1e7e60f83be0c0a2f3ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdetail_1_1char__traits.html">char_traits</a>&lt; <a class="el" href="#a6c852966a1cd5719ae32e8e486691fbe">char_type</a> &gt;::int_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c71e463d5ad1e7e60f83be0c0a2f3ca">get_character</a> ()</td></tr>
 <tr class="separator:a3c71e463d5ad1e7e60f83be0c0a2f3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8098cf8a19a71db5ba795f433d0a40a2" id="r_a8098cf8a19a71db5ba795f433d0a40a2"><td class="memTemplParams" colspan="2"><a id="a8098cf8a19a71db5ba795f433d0a40a2" name="a8098cf8a19a71db5ba795f433d0a40a2"></a>
-template&lt;class T&gt; </td></tr>
-<tr class="memitem:a8098cf8a19a71db5ba795f433d0a40a2"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_elements</b> (T *dest, std::size_t count=1)</td></tr>
+<tr class="memitem:a8098cf8a19a71db5ba795f433d0a40a2" id="r_a8098cf8a19a71db5ba795f433d0a40a2"><td class="memTemplParams" colspan="2">template&lt;class T&gt; </td></tr>
+<tr class="memitem:a8098cf8a19a71db5ba795f433d0a40a2"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8098cf8a19a71db5ba795f433d0a40a2">get_elements</a> (T *dest, std::size_t count=1)</td></tr>
 <tr class="separator:a8098cf8a19a71db5ba795f433d0a40a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221" id="r_ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplParams" colspan="2"><a id="ab86106ba230f1542b94dcd96e6ab3221" name="ab86106ba230f1542b94dcd96e6ab3221"></a>
-template&lt;typename BaseInputAdapter, size_t T&gt; </td></tr>
-<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wide_string_input_helper</b></td></tr>
+<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221" id="r_ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplParams" colspan="2">template&lt;typename BaseInputAdapter, size_t T&gt; </td></tr>
+<tr class="memitem:ab86106ba230f1542b94dcd96e6ab3221"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab86106ba230f1542b94dcd96e6ab3221">wide_string_input_helper</a></td></tr>
 <tr class="separator:ab86106ba230f1542b94dcd96e6ab3221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6c852966a1cd5719ae32e8e486691fbe" name="a6c852966a1cd5719ae32e8e486691fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c852966a1cd5719ae32e8e486691fbe">&#9670;&#160;</a></span>char_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdetail_1_1iterator__input__adapter.html">detail::iterator_input_adapter</a>&lt; IteratorType &gt;::char_type = typename std::iterator_traits&lt;IteratorType&gt;::value_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6bbdb33434a11f90d6bfe2a9a71ee356" name="a6bbdb33434a11f90d6bfe2a9a71ee356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbdb33434a11f90d6bfe2a9a71ee356">&#9670;&#160;</a></span>iterator_input_adapter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdetail_1_1iterator__input__adapter.html">detail::iterator_input_adapter</a>&lt; IteratorType &gt;::iterator_input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">IteratorType</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IteratorType</td>          <td class="paramname"><span class="paramname"><em>last</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3c71e463d5ad1e7e60f83be0c0a2f3ca" name="a3c71e463d5ad1e7e60f83be0c0a2f3ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c71e463d5ad1e7e60f83be0c0a2f3ca">&#9670;&#160;</a></span>get_character()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdetail_1_1char__traits.html">char_traits</a>&lt; <a class="el" href="#a6c852966a1cd5719ae32e8e486691fbe">char_type</a> &gt;::int_type <a class="el" href="classdetail_1_1iterator__input__adapter.html">detail::iterator_input_adapter</a>&lt; IteratorType &gt;::get_character </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8098cf8a19a71db5ba795f433d0a40a2" name="a8098cf8a19a71db5ba795f433d0a40a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8098cf8a19a71db5ba795f433d0a40a2">&#9670;&#160;</a></span>get_elements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<div class="memtemplate">
+template&lt;class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classdetail_1_1iterator__input__adapter.html">detail::iterator_input_adapter</a>&lt; IteratorType &gt;::get_elements </td>
+          <td>(</td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>dest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ab86106ba230f1542b94dcd96e6ab3221" name="ab86106ba230f1542b94dcd96e6ab3221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86106ba230f1542b94dcd96e6ab3221">&#9670;&#160;</a></span>wide_string_input_helper</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IteratorType&gt; </div>
+<div class="memtemplate">
+template&lt;typename BaseInputAdapter, size_t T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="structdetail_1_1wide__string__input__helper.html">wide_string_input_helper</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>LzAsync/<a class="el" href="json_8hpp_source.html">json.hpp</a></li>
 </ul>

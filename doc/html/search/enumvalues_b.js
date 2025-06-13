@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['store_0',['store',['../namespacedetail.html#a7c070b2bf3d61e3d8b8013f6fb18d592a8cd892b7b97ef9489ae4479d3f4ef0fc',1,'detail']]],
-  ['strict_1',['strict',['../namespacedetail.html#abe7cfa1fd8fa706ff4392bff9d1a8298a2133fd717402a7966ee88d06f9e0b792',1,'detail']]],
-  ['string_2',['string',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632ab45cffe084dd3d20d928bee85e7b0f21',1,'detail']]]
+  ['msgpack_0',['msgpack',['../namespacedetail.html#a0ab3b338d0eadc6890b72cccef0ea04fac40d516627022a54003ac2b74a82688a',1,'detail']]]
 ];

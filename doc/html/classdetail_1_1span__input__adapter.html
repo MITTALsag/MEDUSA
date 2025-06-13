@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: detail::span_input_adapter Class Reference</title>
+<title>MEDUSA PROJECT: detail::span_input_adapter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -108,21 +108,109 @@ $(function(){initNavTree('classdetail_1_1span__input__adapter.html',''); initRes
   <div class="headertitle"><div class="title">detail::span_input_adapter Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="json_8hpp_source.html">json.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a100cb2415f6ad4fb60e3848569ed20dc" id="r_a100cb2415f6ad4fb60e3848569ed20dc"><td class="memTemplParams" colspan="2"><a id="a100cb2415f6ad4fb60e3848569ed20dc" name="a100cb2415f6ad4fb60e3848569ed20dc"></a>
-template&lt;typename CharT, typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;::value &amp;&amp;std::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;::value &amp;&amp;sizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type = 0&gt; </td></tr>
-<tr class="memitem:a100cb2415f6ad4fb60e3848569ed20dc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>span_input_adapter</b> (CharT b, std::size_t l)</td></tr>
+<tr class="memitem:a100cb2415f6ad4fb60e3848569ed20dc" id="r_a100cb2415f6ad4fb60e3848569ed20dc"><td class="memTemplParams" colspan="2">template&lt;typename CharT, typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;sizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type = 0&gt; </td></tr>
+<tr class="memitem:a100cb2415f6ad4fb60e3848569ed20dc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a100cb2415f6ad4fb60e3848569ed20dc">span_input_adapter</a> (CharT b, std::size_t l)</td></tr>
 <tr class="separator:a100cb2415f6ad4fb60e3848569ed20dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3a694242ffd71722d292ffa9156e79" id="r_a8f3a694242ffd71722d292ffa9156e79"><td class="memTemplParams" colspan="2"><a id="a8f3a694242ffd71722d292ffa9156e79" name="a8f3a694242ffd71722d292ffa9156e79"></a>
-template&lt;class IteratorType, typename std::enable_if&lt; std::is_same&lt; typename <a class="el" href="structdetail_1_1iterator__traits.html">iterator_traits</a>&lt; IteratorType &gt;::iterator_category, std::random_access_iterator_tag &gt;::value, int &gt;::type = 0&gt; </td></tr>
-<tr class="memitem:a8f3a694242ffd71722d292ffa9156e79"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>span_input_adapter</b> (IteratorType first, IteratorType last)</td></tr>
+<tr class="memitem:a8f3a694242ffd71722d292ffa9156e79" id="r_a8f3a694242ffd71722d292ffa9156e79"><td class="memTemplParams" colspan="2">template&lt;class IteratorType, typename std::enable_if&lt; std::is_same&lt; typename <a class="el" href="structdetail_1_1iterator__traits.html">iterator_traits</a>&lt; IteratorType &gt;::iterator_category, std::random_access_iterator_tag &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a>, int &gt;::type = 0&gt; </td></tr>
+<tr class="memitem:a8f3a694242ffd71722d292ffa9156e79"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8f3a694242ffd71722d292ffa9156e79">span_input_adapter</a> (IteratorType first, IteratorType last)</td></tr>
 <tr class="separator:a8f3a694242ffd71722d292ffa9156e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf5823194cdd254da0ba4f550e77904" id="r_adaf5823194cdd254da0ba4f550e77904"><td class="memItemLeft" align="right" valign="top"><a id="adaf5823194cdd254da0ba4f550e77904" name="adaf5823194cdd254da0ba4f550e77904"></a>
-contiguous_bytes_input_adapter &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> ()</td></tr>
+<tr class="memitem:adaf5823194cdd254da0ba4f550e77904" id="r_adaf5823194cdd254da0ba4f550e77904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedetail.html#a7a6cea300980654c629e71e56656236b">contiguous_bytes_input_adapter</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaf5823194cdd254da0ba4f550e77904">get</a> ()</td></tr>
 <tr class="separator:adaf5823194cdd254da0ba4f550e77904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a100cb2415f6ad4fb60e3848569ed20dc" name="a100cb2415f6ad4fb60e3848569ed20dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100cb2415f6ad4fb60e3848569ed20dc">&#9670;&#160;</a></span>span_input_adapter() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CharT, typename std::enable_if&lt; std::is_pointer&lt; CharT &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_integral&lt; typename std::remove_pointer&lt; CharT &gt;::type &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;sizeof(typename std::remove_pointer&lt; CharT &gt;::type)==1, int &gt;::type = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">detail::span_input_adapter::span_input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">CharT</td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>l</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f3a694242ffd71722d292ffa9156e79" name="a8f3a694242ffd71722d292ffa9156e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f3a694242ffd71722d292ffa9156e79">&#9670;&#160;</a></span>span_input_adapter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class IteratorType, typename std::enable_if&lt; std::is_same&lt; typename <a class="el" href="structdetail_1_1iterator__traits.html">iterator_traits</a>&lt; IteratorType &gt;::iterator_category, std::random_access_iterator_tag &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a>, int &gt;::type = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">detail::span_input_adapter::span_input_adapter </td>
+          <td>(</td>
+          <td class="paramtype">IteratorType</td>          <td class="paramname"><span class="paramname"><em>first</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IteratorType</td>          <td class="paramname"><span class="paramname"><em>last</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adaf5823194cdd254da0ba4f550e77904" name="adaf5823194cdd254da0ba4f550e77904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf5823194cdd254da0ba4f550e77904">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedetail.html#a7a6cea300980654c629e71e56656236b">contiguous_bytes_input_adapter</a> &amp;&amp; detail::span_input_adapter::get </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>LzAsync/<a class="el" href="json_8hpp_source.html">json.hpp</a></li>
 </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: LzAsync/DataThread/DataThread.h File Reference</title>
+<title>MEDUSA PROJECT: LzAsync/DataThread/DataThread.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -118,7 +118,7 @@ $(function(){initNavTree('_data_thread_8h.html',''); initResizable(true); });
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
-<code>#include &lt;LzServices/LzLog.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="_lz_log_8h_source.html">LzServices/LzLog.h</a>&gt;</code><br />
 </div>
 <p><a href="_data_thread_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -139,14 +139,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a2942e7d96a852f9627c67e8f871658d3" id="r_a2942e7d96a852f9627c67e8f871658d3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2942e7d96a852f9627c67e8f871658d3">ThreadMutexState</a> { <b>NEED</b>
-, <b>HAVE</b>
-, <b>FREE</b>
+<tr class="memitem:a2942e7d96a852f9627c67e8f871658d3" id="r_a2942e7d96a852f9627c67e8f871658d3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2942e7d96a852f9627c67e8f871658d3">ThreadMutexState</a> { <a class="el" href="#a2942e7d96a852f9627c67e8f871658d3ac194028d108fd29de804b18af355a991">NEED</a>
+, <a class="el" href="#a2942e7d96a852f9627c67e8f871658d3a2ba21f8b8f82a32810d51b495229ddf0">HAVE</a>
+, <a class="el" href="#a2942e7d96a852f9627c67e8f871658d3a88c189a42c87aa49d667fc8ab76bc323">FREE</a>
  }</td></tr>
 <tr class="memdesc:a2942e7d96a852f9627c67e8f871658d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutex operation states.  <a href="#a2942e7d96a852f9627c67e8f871658d3">More...</a><br /></td></tr>
 <tr class="separator:a2942e7d96a852f9627c67e8f871658d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9c78c91e600305a61ee817a2c2a93e" id="r_aec9c78c91e600305a61ee817a2c2a93e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec9c78c91e600305a61ee817a2c2a93e">TagState</a> { <b>START</b>
-, <b>STOP</b>
+<tr class="memitem:aec9c78c91e600305a61ee817a2c2a93e" id="r_aec9c78c91e600305a61ee817a2c2a93e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec9c78c91e600305a61ee817a2c2a93e">TagState</a> { <a class="el" href="#aec9c78c91e600305a61ee817a2c2a93eab078ffd28db767c502ac367053f6e0ac">START</a>
+, <a class="el" href="#aec9c78c91e600305a61ee817a2c2a93ea615a46af313786fc4e349f34118be111">STOP</a>
  }</td></tr>
 <tr class="memdesc:aec9c78c91e600305a61ee817a2c2a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tag operation markers.  <a href="#aec9c78c91e600305a61ee817a2c2a93e">More...</a><br /></td></tr>
 <tr class="separator:aec9c78c91e600305a61ee817a2c2a93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +185,10 @@ Enumerations</h2></td></tr>
 <li>START: Beginning of tagged section</li>
 <li>STOP: End of tagged section </li>
 </ul>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aec9c78c91e600305a61ee817a2c2a93eab078ffd28db767c502ac367053f6e0ac" name="aec9c78c91e600305a61ee817a2c2a93eab078ffd28db767c502ac367053f6e0ac"></a>START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec9c78c91e600305a61ee817a2c2a93ea615a46af313786fc4e349f34118be111" name="aec9c78c91e600305a61ee817a2c2a93ea615a46af313786fc4e349f34118be111"></a>STOP&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -214,6 +218,11 @@ Enumerations</h2></td></tr>
 <li>HAVE: Thread successfully acquires mutex</li>
 <li>FREE: Thread releases mutex </li>
 </ul>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2942e7d96a852f9627c67e8f871658d3ac194028d108fd29de804b18af355a991" name="a2942e7d96a852f9627c67e8f871658d3ac194028d108fd29de804b18af355a991"></a>NEED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2942e7d96a852f9627c67e8f871658d3a2ba21f8b8f82a32810d51b495229ddf0" name="a2942e7d96a852f9627c67e8f871658d3a2ba21f8b8f82a32810d51b495229ddf0"></a>HAVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2942e7d96a852f9627c67e8f871658d3a88c189a42c87aa49d667fc8ab76bc323" name="a2942e7d96a852f9627c67e8f871658d3a88c189a42c87aa49d667fc8ab76bc323"></a>FREE&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

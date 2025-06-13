@@ -24,13 +24,60 @@
 */
 var NAVTREE =
 [
-  [ "My Project", "index.html", [
+  [ "MEDUSA PROJECT", "index.html", [
+    [ "[Titre] # MULTITHREADING VISUALISATION & SOLUTION  (ThreadVS)", "md__r_e_a_d_m_e.html", [
+      [ "About", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Table of contents", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Building", "md__r_e_a_d_m_e.html#autotoc_md4", [
+        [ "Supported Operating Systems", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+      ] ],
+      [ "System Requirements", "md__r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "Installing", "md__r_e_a_d_m_e.html#autotoc_md7", null ],
+      [ "Utilisation", "md__r_e_a_d_m_e.html#autotoc_md8", [
+        [ "Backend", "md__r_e_a_d_m_e.html#autotoc_md9", [
+          [ "Initialization :", "md__r_e_a_d_m_e.html#autotoc_md10", null ],
+          [ "Dispatch a job", "md__r_e_a_d_m_e.html#autotoc_md12", null ],
+          [ "Example Usage :", "md__r_e_a_d_m_e.html#autotoc_md13", null ],
+          [ "Managing the Thread Pool", "md__r_e_a_d_m_e.html#autotoc_md15", null ],
+          [ "Logging and Exporting Logs", "md__r_e_a_d_m_e.html#autotoc_md17", null ],
+          [ "Example Usage", "md__r_e_a_d_m_e.html#autotoc_md18", null ],
+          [ "Mutexes Management", "md__r_e_a_d_m_e.html#autotoc_md20", null ],
+          [ "Example Usage :", "md__r_e_a_d_m_e.html#autotoc_md21", null ],
+          [ "Section Management (Tags)", "md__r_e_a_d_m_e.html#autotoc_md23", null ],
+          [ "Example Usage :", "md__r_e_a_d_m_e.html#autotoc_md24", null ],
+          [ "Real-Time Mode:", "md__r_e_a_d_m_e.html#autotoc_md26", null ],
+          [ "Example Usage :", "md__r_e_a_d_m_e.html#autotoc_md27", [
+            [ "DeadLocks:", "md__r_e_a_d_m_e.html#autotoc_md29", null ]
+          ] ],
+          [ "Example Usage :", "md__r_e_a_d_m_e.html#autotoc_md30", null ]
+        ] ],
+        [ "Frontend (GUI)", "md__r_e_a_d_m_e.html#autotoc_md32", [
+          [ "Central Area: Execution Timeline", "md__r_e_a_d_m_e.html#autotoc_md34", null ],
+          [ "Top Toolbar", "md__r_e_a_d_m_e.html#autotoc_md37", null ],
+          [ "Left Sidebar", "md__r_e_a_d_m_e.html#autotoc_md41", null ],
+          [ "Bottom Area: Textual Trace", "md__r_e_a_d_m_e.html#autotoc_md45", null ]
+        ] ]
+      ] ],
+      [ "Exemple", "md__r_e_a_d_m_e.html#autotoc_md47", null ],
+      [ "Contribution", "md__r_e_a_d_m_e.html#autotoc_md48", null ],
+      [ "Build with", "md__r_e_a_d_m_e.html#autotoc_md49", [
+        [ "Langages & Frameworks", "md__r_e_a_d_m_e.html#autotoc_md50", null ],
+        [ "Outils", "md__r_e_a_d_m_e.html#autotoc_md51", [
+          [ "CI", "md__r_e_a_d_m_e.html#autotoc_md52", null ],
+          [ "Déploiement", "md__r_e_a_d_m_e.html#autotoc_md53", null ]
+        ] ]
+      ] ],
+      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md54", null ],
+      [ "Gestion des versions", "md__r_e_a_d_m_e.html#autotoc_md55", null ],
+      [ "Licence", "md__r_e_a_d_m_e.html#autotoc_md56", null ]
+    ] ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
@@ -45,14 +92,18 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Enumerations", "globals_enum.html", null ]
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ],
     [ "Examples", "examples.html", "examples" ]
@@ -61,10 +112,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_data_thread_8h.html",
-"classdetail_1_1binary__writer.html#a1aae361b7492825979cbb80245b9c0d6",
-"classdetail_1_1serializer.html#a3d025f3aa1e8661554858b8aaab08c3b",
-"structdetail_1_1is__basic__json__context.html"
+"_data_thread_8cpp.html",
+"class_lz_async_1_1_list.html#a5f93a7010cfa377e7a7b02cb7ddde205",
+"class_lz_services_1_1_list.html#a78e060661deeff80ef57042ffef3b943",
+"classbasic__json.html#a2ebde9badb4f1b4cf6517f6b8e302d0d",
+"classdetail_1_1input__stream__adapter.html#a796d902229ac65b6eec543cba4aff704",
+"classdetail_1_1json__sax__acceptor.html#aa8ecef0d8f7096cd72acc95d0c349013",
+"classdetail_1_1parser.html#ae6dea6f2ecbd5ac3f2b66573f34fc063",
+"json_8hpp.html#a0d17bf1a54fc45a04ced6d3aa86a96e3",
+"json_8hpp.html#afe58497d56cda5e4cbf2d33be1bdd91e",
+"namespacedetail.html#a8c225a3450f5d8a42cded36558ce54bf",
+"structdetail_1_1has__non__default__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_2d17f33a54f009ebd0a99d19cdccdb1f.html",
+"structdetail_1_1output__adapter__protocol.html#ae2abfac28a47d21eb1ece0a2b7f06ff5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

@@ -1,0 +1,7 @@
+PROJECT_NAME           = "MEDUSA PROJECT"
+INPUT                  = ./LzAsync ./LzServices README.md
+RECURSIVE              = YES
+OUTPUT_DIRECTORY       = ./doc
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+EXTRACT_ALL            = YES

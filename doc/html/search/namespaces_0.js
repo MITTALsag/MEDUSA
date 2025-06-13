@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['detail_0',['detail',['../namespacedetail.html',1,'']]],
-  ['detail_3a_3adtoa_5fimpl_1',['dtoa_impl',['../namespacedetail_1_1dtoa__impl.html',1,'detail']]]
+  ['_3a_3ajson_5fliterals_0',['json_literals',['../namespaceliterals_1_1json__literals.html',1,'']]]
 ];

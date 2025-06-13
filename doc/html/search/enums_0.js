@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bjdata_5fversion_5ft_0',['bjdata_version_t',['../namespacedetail.html#ae785f1c6c99c714463b625da13a75dad',1,'detail']]]
+  ['addintoreturnpolicy_0',['AddIntoReturnPolicy',['../class_lz_services_1_1_list.html#a2d80bf0fad3d7db8f19933edbeca8d41',1,'LzServices::List::AddIntoReturnPolicy'],['../class_lz_async_1_1_list.html#a2d80bf0fad3d7db8f19933edbeca8d41',1,'LzAsync::List::AddIntoReturnPolicy']]]
 ];

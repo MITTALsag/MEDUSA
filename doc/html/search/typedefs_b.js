@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reference_0',['reference',['../classdetail_1_1iter__impl.html#ac0cfb3a9727e77580cb1beada093ee81',1,'detail::iter_impl::reference'],['../classdetail_1_1json__reverse__iterator.html#a81a4d0a61246d4ece37fd14eacfadda0',1,'detail::json_reverse_iterator::reference'],['../classbasic__json.html#a6ca7bfb35987ce7cb8d27447cda5b80a',1,'basic_json::reference']]],
-  ['reverse_5fiterator_1',['reverse_iterator',['../classbasic__json.html#aedc059cdae078322bb0d434b2127d1cf',1,'basic_json']]]
+  ['laundered_5ftype_0',['laundered_type',['../structdetail_1_1is__constructible__string__type.html#a100e49fd7347418eb9756dc859f04ec9',1,'detail::is_constructible_string_type']]],
+  ['lexer_5ft_1',['lexer_t',['../classdetail_1_1json__sax__dom__parser.html#aaa3f9f2e99ee783e5790c069e4138c02',1,'detail::json_sax_dom_parser::lexer_t'],['../classdetail_1_1json__sax__dom__callback__parser.html#a46ed0f512fbc461d4a82b4bc8f49422d',1,'detail::json_sax_dom_callback_parser::lexer_t']]]
 ];

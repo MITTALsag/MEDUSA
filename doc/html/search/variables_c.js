@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thousands_5fsep_0',['thousands_sep',['../classdetail_1_1serializer.html#a5b75b99511362e4e5d011c8a961e96bb',1,'detail::serializer']]]
+  ['object_5fiterator_0',['object_iterator',['../structdetail_1_1internal__iterator.html#acf787101c4778e750cfdb0f44066a6ef',1,'detail::internal_iterator']]]
 ];

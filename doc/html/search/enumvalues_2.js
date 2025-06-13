@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['discarded_0',['discarded',['../namespacedetail.html#a917c3efabea8a20dc72d9ae2c673d632a94708897ec9db8647dfe695714c98e46',1,'detail']]]
+  ['cbor_0',['cbor',['../namespacedetail.html#a0ab3b338d0eadc6890b72cccef0ea04faaf9de350d652f0c9055ddab514bd23ea',1,'detail']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: detail::binary_writer&lt; BasicJsonType, CharType &gt; Class Template Reference</title>
+<title>MEDUSA PROJECT: detail::binary_writer&lt; BasicJsonType, CharType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -126,26 +126,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae6ab36b61e8ad346e75d9f9abc983d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3dbefa80134d3530a1b3f1c9629586" id="r_adc3dbefa80134d3530a1b3f1c9629586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc3dbefa80134d3530a1b3f1c9629586">write_msgpack</a> (const BasicJsonType &amp;j)</td></tr>
 <tr class="separator:adc3dbefa80134d3530a1b3f1c9629586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a377616a7e3ca05a134a4cbbed79e3db8" id="r_a377616a7e3ca05a134a4cbbed79e3db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a377616a7e3ca05a134a4cbbed79e3db8">write_ubjson</a> (const BasicJsonType &amp;j, const bool use_count, const bool use_type, const bool add_prefix=true, const bool use_bjdata=false, const <a class="el" href="namespacedetail.html#ae785f1c6c99c714463b625da13a75dad">bjdata_version_t</a> bjdata_version=bjdata_version_t::draft2)</td></tr>
+<tr class="memitem:a377616a7e3ca05a134a4cbbed79e3db8" id="r_a377616a7e3ca05a134a4cbbed79e3db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a377616a7e3ca05a134a4cbbed79e3db8">write_ubjson</a> (const BasicJsonType &amp;j, const bool use_count, const bool use_type, const bool add_prefix=true, const bool use_bjdata=false, const <a class="el" href="namespacedetail.html#ae785f1c6c99c714463b625da13a75dad">bjdata_version_t</a> bjdata_version=<a class="el" href="namespacedetail.html#ae785f1c6c99c714463b625da13a75dadaad7a9bad4532dc7571e87bb05e56660d">bjdata_version_t::draft2</a>)</td></tr>
 <tr class="separator:a377616a7e3ca05a134a4cbbed79e3db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906" id="r_a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplParams" colspan="2"><a id="a2822d4a58bbb0dc2198686da430e8906" name="a2822d4a58bbb0dc2198686da430e8906"></a>
-template&lt;typename C = CharType, enable_if_t&lt; std::is_signed&lt; C &gt;::value &amp;&amp;std::is_signed&lt; char &gt;::value &gt; * = nullptr&gt; </td></tr>
-<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplItemLeft" align="right" valign="top">static constexpr CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_char_type</b> (std::uint8_t x) noexcept</td></tr>
+<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906" id="r_a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplParams" colspan="2">template&lt;typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_signed&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_signed&lt; char &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </td></tr>
+<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplItemLeft" align="right" valign="top">static constexpr CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2822d4a58bbb0dc2198686da430e8906">to_char_type</a> (std::uint8_t x) noexcept</td></tr>
 <tr class="separator:a2822d4a58bbb0dc2198686da430e8906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc03434de56f9c9afd24702922a7ec8" id="r_a4bc03434de56f9c9afd24702922a7ec8"><td class="memTemplParams" colspan="2"><a id="a4bc03434de56f9c9afd24702922a7ec8" name="a4bc03434de56f9c9afd24702922a7ec8"></a>
-template&lt;typename C = CharType, enable_if_t&lt; std::is_signed&lt; C &gt;::value &amp;&amp;std::is_unsigned&lt; char &gt;::value &gt; * = nullptr&gt; </td></tr>
-<tr class="memitem:a4bc03434de56f9c9afd24702922a7ec8"><td class="memTemplItemLeft" align="right" valign="top">static CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_char_type</b> (std::uint8_t x) noexcept</td></tr>
+<tr class="memitem:a4bc03434de56f9c9afd24702922a7ec8" id="r_a4bc03434de56f9c9afd24702922a7ec8"><td class="memTemplParams" colspan="2">template&lt;typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_signed&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_unsigned&lt; char &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </td></tr>
+<tr class="memitem:a4bc03434de56f9c9afd24702922a7ec8"><td class="memTemplItemLeft" align="right" valign="top">static CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4bc03434de56f9c9afd24702922a7ec8">to_char_type</a> (std::uint8_t x) noexcept</td></tr>
 <tr class="separator:a4bc03434de56f9c9afd24702922a7ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906" id="r_a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplParams" colspan="2"><a id="a2822d4a58bbb0dc2198686da430e8906" name="a2822d4a58bbb0dc2198686da430e8906"></a>
-template&lt;typename C = CharType, enable_if_t&lt; std::is_unsigned&lt; C &gt;::value &gt; * = nullptr&gt; </td></tr>
-<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplItemLeft" align="right" valign="top">static constexpr CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_char_type</b> (std::uint8_t x) noexcept</td></tr>
+<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906" id="r_a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplParams" colspan="2">template&lt;typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_unsigned&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </td></tr>
+<tr class="memitem:a2822d4a58bbb0dc2198686da430e8906"><td class="memTemplItemLeft" align="right" valign="top">static constexpr CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2822d4a58bbb0dc2198686da430e8906">to_char_type</a> (std::uint8_t x) noexcept</td></tr>
 <tr class="separator:a2822d4a58bbb0dc2198686da430e8906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91bfd3642a0f90c295f9ce79c9447be9" id="r_a91bfd3642a0f90c295f9ce79c9447be9"><td class="memTemplParams" colspan="2"><a id="a91bfd3642a0f90c295f9ce79c9447be9" name="a91bfd3642a0f90c295f9ce79c9447be9"></a>
-template&lt;typename InputCharType, typename C = CharType, enable_if_t&lt; std::is_signed&lt; C &gt;::value &amp;&amp;std::is_signed&lt; char &gt;::value &amp;&amp;std::is_same&lt; char, typename std::remove_cv&lt; InputCharType &gt;::type &gt;::value &gt; * = nullptr&gt; </td></tr>
-<tr class="memitem:a91bfd3642a0f90c295f9ce79c9447be9"><td class="memTemplItemLeft" align="right" valign="top">static constexpr CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_char_type</b> (InputCharType x) noexcept</td></tr>
+<tr class="memitem:a91bfd3642a0f90c295f9ce79c9447be9" id="r_a91bfd3642a0f90c295f9ce79c9447be9"><td class="memTemplParams" colspan="2">template&lt;typename InputCharType, typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_signed&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_signed&lt; char &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_same&lt; char, typename std::remove_cv&lt; InputCharType &gt;::type &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </td></tr>
+<tr class="memitem:a91bfd3642a0f90c295f9ce79c9447be9"><td class="memTemplItemLeft" align="right" valign="top">static constexpr CharType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a91bfd3642a0f90c295f9ce79c9447be9">to_char_type</a> (InputCharType x) noexcept</td></tr>
 <tr class="separator:a91bfd3642a0f90c295f9ce79c9447be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -188,6 +184,122 @@ template&lt;typename BasicJsonType, typename CharType&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a91bfd3642a0f90c295f9ce79c9447be9" name="a91bfd3642a0f90c295f9ce79c9447be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bfd3642a0f90c295f9ce79c9447be9">&#9670;&#160;</a></span>to_char_type() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType, typename CharType&gt; </div>
+<div class="memtemplate">
+template&lt;typename InputCharType, typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_signed&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_signed&lt; char &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_same&lt; char, typename std::remove_cv&lt; InputCharType &gt;::type &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr CharType <a class="el" href="classdetail_1_1binary__writer.html">detail::binary_writer</a>&lt; BasicJsonType, CharType &gt;::to_char_type </td>
+          <td>(</td>
+          <td class="paramtype">InputCharType</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2822d4a58bbb0dc2198686da430e8906" name="a2822d4a58bbb0dc2198686da430e8906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2822d4a58bbb0dc2198686da430e8906">&#9670;&#160;</a></span>to_char_type() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType, typename CharType&gt; </div>
+<div class="memtemplate">
+template&lt;typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_signed&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_signed&lt; char &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr CharType <a class="el" href="classdetail_1_1binary__writer.html">detail::binary_writer</a>&lt; BasicJsonType, CharType &gt;::to_char_type </td>
+          <td>(</td>
+          <td class="paramtype">std::uint8_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bc03434de56f9c9afd24702922a7ec8" name="a4bc03434de56f9c9afd24702922a7ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc03434de56f9c9afd24702922a7ec8">&#9670;&#160;</a></span>to_char_type() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType, typename CharType&gt; </div>
+<div class="memtemplate">
+template&lt;typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_signed&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &amp;&amp;std::is_unsigned&lt; char &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static CharType <a class="el" href="classdetail_1_1binary__writer.html">detail::binary_writer</a>&lt; BasicJsonType, CharType &gt;::to_char_type </td>
+          <td>(</td>
+          <td class="paramtype">std::uint8_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2822d4a58bbb0dc2198686da430e8906" name="a2822d4a58bbb0dc2198686da430e8906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2822d4a58bbb0dc2198686da430e8906">&#9670;&#160;</a></span>to_char_type() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicJsonType, typename CharType&gt; </div>
+<div class="memtemplate">
+template&lt;typename C = CharType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; std::is_unsigned&lt; C &gt;<a class="el" href="namespacedetail.html#a6334559c220a676ac4b953ea342f85ce">::value</a> &gt; * = nullptr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr CharType <a class="el" href="classdetail_1_1binary__writer.html">detail::binary_writer</a>&lt; BasicJsonType, CharType &gt;::to_char_type </td>
+          <td>(</td>
+          <td class="paramtype">std::uint8_t</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1aae361b7492825979cbb80245b9c0d6" name="a1aae361b7492825979cbb80245b9c0d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1aae361b7492825979cbb80245b9c0d6">&#9670;&#160;</a></span>write_bson()</h2>
 
@@ -327,7 +439,7 @@ template&lt;typename BasicJsonType, typename CharType&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespacedetail.html#ae785f1c6c99c714463b625da13a75dad">bjdata_version_t</a></td>          <td class="paramname"><span class="paramname"><em>bjdata_version</em></span><span class="paramdefsep"> = </span><span class="paramdefval">bjdata_version_t::draft2</span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="namespacedetail.html#ae785f1c6c99c714463b625da13a75dad">bjdata_version_t</a></td>          <td class="paramname"><span class="paramname"><em>bjdata_version</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacedetail.html#ae785f1c6c99c714463b625da13a75dadaad7a9bad4532dc7571e87bb05e56660d">bjdata_version_t::draft2</a></span>&#160;)</td>
         </tr>
       </table>
   </td>

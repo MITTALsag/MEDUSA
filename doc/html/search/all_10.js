@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['rbegin_0',['rbegin',['../classbasic__json.html#a11da8db436685032e97563cbb7490ff5',1,'basic_json::rbegin() noexcept'],['../classbasic__json.html#a4ef4aee2259af5183267f6e8f774d0eb',1,'basic_json::rbegin() const noexcept']]],
-  ['reference_1',['reference',['../classdetail_1_1iter__impl.html#ac0cfb3a9727e77580cb1beada093ee81',1,'detail::iter_impl::reference'],['../classdetail_1_1json__reverse__iterator.html#a81a4d0a61246d4ece37fd14eacfadda0',1,'detail::json_reverse_iterator::reference'],['../classbasic__json.html#a6ca7bfb35987ce7cb8d27447cda5b80a',1,'basic_json::reference']]],
-  ['rend_2',['rend',['../classbasic__json.html#a8d8855a8c04ee7986ae8bab283c4f0de',1,'basic_json::rend() noexcept'],['../classbasic__json.html#ae81c3b38089a63d988a1efefe3ebc4bf',1,'basic_json::rend() const noexcept']]],
-  ['replace_3',['replace',['../namespacedetail.html#abe7cfa1fd8fa706ff4392bff9d1a8298a9dde360102c103867bd2f45872f1129c',1,'detail']]],
-  ['replace_5fsubstring_4',['replace_substring',['../namespacedetail.html#a6fd295e53b1dd4f46e235e6afee26d5e',1,'detail']]],
-  ['resetjobcounter_5',['ResetJobCounter',['../class_jobs.html#a1af50c99695193dd128556aae2191ac3',1,'Jobs']]],
-  ['restartpool_6',['restartPool',['../class_lz_async_1_1_dispatch_q.html#a066dfa43a61bb7f3c66ae13cc1107dc1',1,'LzAsync::DispatchQ']]],
-  ['reverse_5fiterator_7',['reverse_iterator',['../classbasic__json.html#aedc059cdae078322bb0d434b2127d1cf',1,'basic_json']]]
+  ['k_0',['k',['../structdetail_1_1dtoa__impl_1_1cached__power.html#ae9c889d5fc4427f633ec23044e986755',1,'detail::dtoa_impl::cached_power']]],
+  ['kalpha_1',['kAlpha',['../namespacedetail_1_1dtoa__impl.html#a95c569b7627a9372686f1f77d73e8660',1,'detail::dtoa_impl']]],
+  ['key_2',['key',['../classdetail_1_1iteration__proxy__value.html#ad12633bc0d3ac7a651381b174a7914ee',1,'detail::iteration_proxy_value::key()'],['../structjson__sax.html#a3355ecd7e3e9806dcb80b2f8842b82ce',1,'json_sax::key()'],['../classdetail_1_1json__sax__dom__parser.html#a6a8ecf215c3259c980ba025c42e56268',1,'detail::json_sax_dom_parser::key()'],['../classdetail_1_1json__sax__dom__callback__parser.html#a88845dd64b87c9e6f38a7ef8653d9237',1,'detail::json_sax_dom_callback_parser::key()'],['../classdetail_1_1json__sax__acceptor.html#ac5bd1fdedf4292062a554c96b0a857bd',1,'detail::json_sax_acceptor::key()'],['../classdetail_1_1iter__impl.html#a4064b295014b32f3cabd86f94264fc74',1,'detail::iter_impl::key()'],['../classdetail_1_1json__reverse__iterator.html#a68d4f0c3e978afdc7509ee88e2f7b996',1,'detail::json_reverse_iterator::key()'],['../namespacedetail.html#a47b1bb0bbd3596589ed9187059c312efa3c6e0b8a9c15224a8228b9a98ca1531d',1,'detail::key']]],
+  ['key_5fcompare_3',['key_compare',['../structordered__map.html#a4bbf207217197f997a9f3da8f149368b',1,'ordered_map']]],
+  ['key_5ffunction_5ft_4',['key_function_t',['../namespacedetail.html#a566da3d2466aee239ede8bb92ce7e1c7',1,'detail']]],
+  ['key_5ftype_5',['key_type',['../structordered__map.html#abe63d891859a3d0b156933d5b44ac85f',1,'ordered_map']]],
+  ['key_5ftype_5ft_6',['key_type_t',['../namespacedetail.html#ae16bad596b69e14a8db0e0c4924a558b',1,'detail']]],
+  ['kgamma_7',['kGamma',['../namespacedetail_1_1dtoa__impl.html#ae152a095d2dd1a6dd41ef8ad39c26e19',1,'detail::dtoa_impl']]],
+  ['kprecision_8',['kPrecision',['../structdetail_1_1dtoa__impl_1_1diyfp.html#a80cf8cc846a7bf96362d3b11886994e3',1,'detail::dtoa_impl::diyfp']]]
 ];

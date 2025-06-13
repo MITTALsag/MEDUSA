@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Jobs Class Reference</title>
+<title>MEDUSA PROJECT: Jobs Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -118,9 +118,8 @@ $(function(){initNavTree('class_jobs.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a800c3a3a36cbf80c46c552e64002cc11" id="r_a800c3a3a36cbf80c46c552e64002cc11"><td class="memItemLeft" align="right" valign="top"><a id="a800c3a3a36cbf80c46c552e64002cc11" name="a800c3a3a36cbf80c46c552e64002cc11"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>time_point</b> = std::chrono::time_point&lt;std::chrono::steady_clock&gt;</td></tr>
-<tr class="memdesc:a800c3a3a36cbf80c46c552e64002cc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-resolution timestamp type for precise execution tracking. <br /></td></tr>
+<tr class="memitem:a800c3a3a36cbf80c46c552e64002cc11" id="r_a800c3a3a36cbf80c46c552e64002cc11"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a800c3a3a36cbf80c46c552e64002cc11">time_point</a> = std::chrono::time_point&lt;std::chrono::steady_clock&gt;</td></tr>
+<tr class="memdesc:a800c3a3a36cbf80c46c552e64002cc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">High-resolution timestamp type for precise execution tracking.  <br /></td></tr>
 <tr class="separator:a800c3a3a36cbf80c46c552e64002cc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -167,9 +166,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1af50c99695193dd128556aae2191ac3" id="r_a1af50c99695193dd128556aae2191ac3"><td class="memItemLeft" align="right" valign="top"><a id="a1af50c99695193dd128556aae2191ac3" name="a1af50c99695193dd128556aae2191ac3"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetJobCounter</b> ()</td></tr>
-<tr class="memdesc:a1af50c99695193dd128556aae2191ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets global job counter. <br /></td></tr>
+<tr class="memitem:a1af50c99695193dd128556aae2191ac3" id="r_a1af50c99695193dd128556aae2191ac3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1af50c99695193dd128556aae2191ac3">ResetJobCounter</a> ()</td></tr>
+<tr class="memdesc:a1af50c99695193dd128556aae2191ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets global job counter.  <br /></td></tr>
 <tr class="separator:a1af50c99695193dd128556aae2191ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -181,7 +179,24 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetJobCounte
 <li>Callback function management</li>
 </ul>
 <p>Forms the atomic unit of work in the dispatch queue system. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a800c3a3a36cbf80c46c552e64002cc11" name="a800c3a3a36cbf80c46c552e64002cc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800c3a3a36cbf80c46c552e64002cc11">&#9670;&#160;</a></span>time_point</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a800c3a3a36cbf80c46c552e64002cc11">Jobs::time_point</a> = std::chrono::time_point&lt;std::chrono::steady_clock&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>High-resolution timestamp type for precise execution tracking. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a04bcc981d30d2c50a0f996735b005664" name="a04bcc981d30d2c50a0f996735b005664"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04bcc981d30d2c50a0f996735b005664">&#9670;&#160;</a></span>Jobs() <span class="overload">[1/2]</span></h2>
 
@@ -586,9 +601,36 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetJobCounte
 
 </div>
 </div>
+<a id="a1af50c99695193dd128556aae2191ac3" name="a1af50c99695193dd128556aae2191ac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af50c99695193dd128556aae2191ac3">&#9670;&#160;</a></span>ResetJobCounter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Jobs::ResetJobCounter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets global job counter. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>LzAsync/Jobs/<a class="el" href="_jobs_8h_source.html">Jobs.h</a></li>
-<li>LzAsync/Jobs/<b>Jobs.cpp</b></li>
+<li>LzAsync/Jobs/<a class="el" href="_jobs_8cpp.html">Jobs.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

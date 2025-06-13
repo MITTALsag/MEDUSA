@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['string_5fbuffer_0',['string_buffer',['../classdetail_1_1serializer.html#a27a61728ed0fbc65de009286531a6e70',1,'detail::serializer']]]
+  ['number_5fbuffer_0',['number_buffer',['../classdetail_1_1serializer.html#ace18a55b8304310fee309d31e54a3e27',1,'detail::serializer']]]
 ];

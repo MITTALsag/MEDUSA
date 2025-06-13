@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt; Struct Template Reference</title>
+<title>MEDUSA PROJECT: detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -108,6 +108,8 @@ $(function(){initNavTree('structdetail_1_1is__compatible__array__type__impl_3_01
   <div class="headertitle"><div class="title">detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="json_8hpp_source.html">json.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for detail::is_compatible_array_type_impl&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;is_iterator_traits&lt; iterator_traits&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt;:</div>
 <div class="dyncontent">
@@ -133,7 +135,7 @@ template&lt;typename BasicJsonType, typename CompatibleArrayType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="structdetail_1_1is__compatible__array__type__impl.html">detail::is_compatible_array_type_impl</a>&lt; BasicJsonType, CompatibleArrayType, enable_if_t&lt; is_detected&lt; iterator_t, CompatibleArrayType &gt;::value &amp;&amp;<a class="el" href="structdetail_1_1is__iterator__traits.html">is_iterator_traits</a>&lt; <a class="el" href="structdetail_1_1iterator__traits.html">iterator_traits</a>&lt; detected_t&lt; iterator_t, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, detected_t&lt; range_value_t, CompatibleArrayType &gt; &gt;::value &gt; &gt;::value</td>
+          <td class="memname">bool <a class="el" href="structdetail_1_1is__compatible__array__type__impl.html">detail::is_compatible_array_type_impl</a>&lt; BasicJsonType, CompatibleArrayType, <a class="el" href="namespacedetail.html#a469b9c0b78404c24509a221801bc4c26">enable_if_t</a>&lt; <a class="el" href="namespacedetail.html#a49d7b031250e4de6b66d0f72771c2073">is_detected</a>&lt; <a class="el" href="namespacedetail.html#ab0d3e4e28b7c6c98f622811a1cf5e218">iterator_t</a>, CompatibleArrayType &gt;::value &amp;&amp;<a class="el" href="structdetail_1_1is__iterator__traits.html">is_iterator_traits</a>&lt; <a class="el" href="structdetail_1_1iterator__traits.html">iterator_traits</a>&lt; <a class="el" href="namespacedetail.html#a0d2738c93c46d6a838ffe68933aabd95">detected_t</a>&lt; <a class="el" href="namespacedetail.html#ab0d3e4e28b7c6c98f622811a1cf5e218">iterator_t</a>, CompatibleArrayType &gt; &gt; &gt;::value &amp;&amp;!std::is_same&lt; CompatibleArrayType, <a class="el" href="namespacedetail.html#a0d2738c93c46d6a838ffe68933aabd95">detected_t</a>&lt; <a class="el" href="namespacedetail.html#a81c6c656243412df4c9b1641121c5388">range_value_t</a>, CompatibleArrayType &gt; &gt;::value &gt; &gt;::value</td>
         </tr>
       </table>
   </td>
@@ -144,7 +146,9 @@ template&lt;typename BasicJsonType, typename CompatibleArrayType&gt; </div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">        <a class="code hl_struct" href="structdetail_1_1is__constructible.html">is_constructible</a>&lt;BasicJsonType,</div>
-<div class="line">        range_value_t&lt;CompatibleArrayType&gt;&gt;::value</div>
+<div class="line">        <a class="code hl_typedef" href="namespacedetail.html#a81c6c656243412df4c9b1641121c5388">range_value_t&lt;CompatibleArrayType&gt;</a>&gt;<a class="code hl_variable" href="structdetail_1_1has__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic_fce8b8f93d45fb838eee91b696633019.html#aecf54fbec06b7d13f59c84f22f0a5c54">::value</a></div>
+<div class="ttc" id="anamespacedetail_html_a81c6c656243412df4c9b1641121c5388"><div class="ttname"><a href="namespacedetail.html#a81c6c656243412df4c9b1641121c5388">detail::range_value_t</a></div><div class="ttdeci">value_type_t&lt; iterator_traits&lt; iterator_t&lt; T &gt; &gt; &gt; range_value_t</div><div class="ttdef"><b>Definition</b> json.hpp:3874</div></div>
+<div class="ttc" id="astructdetail_1_1has__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic_fce8b8f93d45fb838eee91b696633019_html_aecf54fbec06b7d13f59c84f22f0a5c54"><div class="ttname"><a href="structdetail_1_1has__from__json_3_01_basic_json_type_00_01_t_00_01enable__if__t_3_01_9is__basic_fce8b8f93d45fb838eee91b696633019.html#aecf54fbec06b7d13f59c84f22f0a5c54">detail::has_from_json&lt; BasicJsonType, T, enable_if_t&lt; !is_basic_json&lt; T &gt;::value &gt; &gt;::value</a></div><div class="ttdeci">static constexpr bool value</div><div class="ttdef"><b>Definition</b> json.hpp:3671</div></div>
 <div class="ttc" id="astructdetail_1_1is__constructible_html"><div class="ttname"><a href="structdetail_1_1is__constructible.html">detail::is_constructible</a></div><div class="ttdef"><b>Definition</b> json.hpp:3819</div></div>
 </div><!-- fragment -->
 </div>

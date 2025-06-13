@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: MutexContainer Class Reference</title>
+<title>MEDUSA PROJECT: MutexContainer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">MEDUSA PROJECT
    </div>
   </td>
     <td>        <div id="MSearchBox" class="MSearchBoxInactive">
@@ -117,9 +117,8 @@ $(function(){initNavTree('class_mutex_container.html',''); initResizable(true); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aaf3ea7db5a22e75a2d267972f0b698e6" id="r_aaf3ea7db5a22e75a2d267972f0b698e6"><td class="memItemLeft" align="right" valign="top"><a id="aaf3ea7db5a22e75a2d267972f0b698e6" name="aaf3ea7db5a22e75a2d267972f0b698e6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexLogs</b> = array&lt;int64_t, 3&gt;</td></tr>
-<tr class="memdesc:aaf3ea7db5a22e75a2d267972f0b698e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp array tracking [request_time, acquisition_time, release_time]. <br /></td></tr>
+<tr class="memitem:aaf3ea7db5a22e75a2d267972f0b698e6" id="r_aaf3ea7db5a22e75a2d267972f0b698e6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf3ea7db5a22e75a2d267972f0b698e6">MutexLogs</a> = array&lt;int64_t, 3&gt;</td></tr>
+<tr class="memdesc:aaf3ea7db5a22e75a2d267972f0b698e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp array tracking [request_time, acquisition_time, release_time].  <br /></td></tr>
 <tr class="separator:aaf3ea7db5a22e75a2d267972f0b698e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -135,7 +134,24 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Mutex operation tracker. </p>
 <p>Records precise timing of mutex state transitions with nanosecond resolution for contention analysis.</p>
 <p>Stores data as [request_time, acquire_time, release_time] tuples indexed by mutex name. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aaf3ea7db5a22e75a2d267972f0b698e6" name="aaf3ea7db5a22e75a2d267972f0b698e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3ea7db5a22e75a2d267972f0b698e6">&#9670;&#160;</a></span>MutexLogs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aaf3ea7db5a22e75a2d267972f0b698e6">MutexContainer::MutexLogs</a> = array&lt;int64_t, 3&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timestamp array tracking [request_time, acquisition_time, release_time]. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac1cee631d30d7c3f36081df0f3be7c6b" name="ac1cee631d30d7c3f36081df0f3be7c6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1cee631d30d7c3f36081df0f3be7c6b">&#9670;&#160;</a></span>getData()</h2>
 
@@ -220,7 +236,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>LzAsync/DataThread/<a class="el" href="_data_thread_8h_source.html">DataThread.h</a></li>
-<li>LzAsync/DataThread/<b>DataThread.cpp</b></li>
+<li>LzAsync/DataThread/<a class="el" href="_data_thread_8cpp.html">DataThread.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
